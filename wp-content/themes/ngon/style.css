@@ -2193,71 +2193,71 @@ button {
     color: #343434
 }
 
-.vertical-health .main-header, .vertical-health .mobile-header-utility {
+.category-suc-khoe .main-header, .category-suc-khoe .mobile-header-utility {
     border-bottom-color: #4CAB5C
 }
 
-.vertical-health .thrillist-logo-wrap, .vertical-health .thrillist-logo-wrap:after, .vertical-health .desktop-logo .logo-text, .vertical-health .mobile-header-hamburger, .vertical-health .custom-franchise-placeholder {
+.category-suc-khoe .thrillist-logo-wrap, .category-suc-khoe .thrillist-logo-wrap:after, .category-suc-khoe .desktop-logo .logo-text, .category-suc-khoe .mobile-header-hamburger, .category-suc-khoe .custom-franchise-placeholder {
     background-color: #4CAB5C
 }
 
-.vertical-health.has-subheader .thrillist-header:not(.header-compact) .thrillist-logo-wrap:after, .vertical-health .section-subnav h3, .vertical-health .section-subnav h3:before, .vertical-health.mobile-nav-on .mobile-header-hamburger, .vertical-health.has-subnav .section-subnav, .vertical-health .mobile-header-map__icon.map-open {
+.category-suc-khoe.has-subheader .thrillist-header:not(.header-compact) .thrillist-logo-wrap:after, .category-suc-khoe .section-subnav h3, .category-suc-khoe .section-subnav h3:before, .category-suc-khoe.mobile-nav-on .mobile-header-hamburger, .category-suc-khoe.has-subnav .section-subnav, .category-suc-khoe .mobile-header-map__icon.map-open {
     background-color: #3D894A
 }
 
-.vertical-health.has-subnav .header-compact .main-header {
+.category-suc-khoe.has-subnav .header-compact .main-header {
     border-color: #3D894A
 }
 
-.vertical-health .menu-items > li.active > a, .vertical-health .menu-items > li.active > span, .vertical-health .utility-nav__search .header-search-submit, .vertical-health .utility-nav .dropdown-title, .vertical-health .utility-nav .dropdown a, .vertical-health .landing-section h2 span, .vertical-health .mobile-nav .top-level li.active a, .vertical-health .menu-items-magnify:after, .vertical-health .custom__header .scroll__link:hover, .vertical-health .custom__header .scroll__link.active-header, .vertical-health .custom-header__logo--mobile .thrillist-custom-name {
+.category-suc-khoe .menu-items > li.active > a, .category-suc-khoe .menu-items > li.active > span, .category-suc-khoe .utility-nav__search .header-search-submit, .category-suc-khoe .utility-nav .dropdown-title, .category-suc-khoe .utility-nav .dropdown a, .category-suc-khoe .landing-section h2 span, .category-suc-khoe .mobile-nav .top-level li.active a, .category-suc-khoe .menu-items-magnify:after, .category-suc-khoe .custom__header .scroll__link:hover, .category-suc-khoe .custom__header .scroll__link.active-header, .category-suc-khoe .custom-header__logo--mobile .thrillist-custom-name {
     color: #4CAB5C
 }
 
-.vertical-health .menu-items__item--more .dropdown li.active a span {
+.category-suc-khoe .menu-items__item--more .dropdown li.active a span {
     background-color: rgba(61, 137, 74, 0.8)
 }
 
-.vertical-health .utility-nav .dropdown:before {
+.category-suc-khoe .utility-nav .dropdown:before {
     border-bottom-color: #4CAB5C
 }
 
-.vertical-health .mobile-nav-categories {
+.category-suc-khoe .mobile-nav-categories {
     background: #3D894A
 }
 
-.vertical-health .mobile-nav-categories li {
+.category-suc-khoe .mobile-nav-categories li {
     background: #4CAB5C
 }
 
-.vertical-health .mobile-subnav .active > a {
+.category-suc-khoe .mobile-subnav .active > a {
     color: #4CAB5C
 }
 
-.vertical-health .mobile-subnav .active > a:after {
+.category-suc-khoe .mobile-subnav .active > a:after {
     color: #4CAB5C
 }
 
-.vertical-health .stack-load-more a {
+.category-suc-khoe .stack-load-more a {
     background: #4CAB5C
 }
 
-.no-touchevents .vertical-health .stack-load-more:not(.loading) a:hover {
+.no-touchevents .category-suc-khoe .stack-load-more:not(.loading) a:hover {
     background: #3D894A
 }
 
-.vertical-health .stack-load-more.loading a {
+.category-suc-khoe .stack-load-more.loading a {
     color: #4CAB5C
 }
 
-.vertical-health .stack-load-more .loader {
+.category-suc-khoe .stack-load-more .loader {
     border-color: #4CAB5C
 }
 
-.vertical-health .search-tile, .vertical-health .section-filter, .vertical-health .custom-header__logo--mobile .thrillist-logo-compact, .vertical-health .thrillist-logo-mobile a {
+.category-suc-khoe .search-tile, .category-suc-khoe .section-filter, .category-suc-khoe .custom-header__logo--mobile .thrillist-logo-compact, .category-suc-khoe .thrillist-logo-mobile a {
     background: #4CAB5C
 }
 
-.vertical-health .mobile-header-map__icon {
+.category-suc-khoe .mobile-header-map__icon {
     color: #4CAB5C;
     border-left-color: #4CAB5C
 }
@@ -2403,71 +2403,71 @@ button {
     color: #045e00
 }
 
-.vertical-on-tap .main-header, .vertical-on-tap .mobile-header-utility {
+.category-on-tap .main-header, .category-on-tap .mobile-header-utility {
     border-bottom-color: #e59200
 }
 
-.vertical-on-tap .thrillist-logo-wrap, .vertical-on-tap .thrillist-logo-wrap:after, .vertical-on-tap .desktop-logo .logo-text, .vertical-on-tap .mobile-header-hamburger, .vertical-on-tap .custom-franchise-placeholder {
+.category-on-tap .thrillist-logo-wrap, .category-on-tap .thrillist-logo-wrap:after, .category-on-tap .desktop-logo .logo-text, .category-on-tap .mobile-header-hamburger, .category-on-tap .custom-franchise-placeholder {
     background-color: #e59200
 }
 
-.vertical-on-tap.has-subheader .thrillist-header:not(.header-compact) .thrillist-logo-wrap:after, .vertical-on-tap .section-subnav h3, .vertical-on-tap .section-subnav h3:before, .vertical-on-tap.mobile-nav-on .mobile-header-hamburger, .vertical-on-tap.has-subnav .section-subnav, .vertical-on-tap .mobile-header-map__icon.map-open {
+.category-on-tap.has-subheader .thrillist-header:not(.header-compact) .thrillist-logo-wrap:after, .category-on-tap .section-subnav h3, .category-on-tap .section-subnav h3:before, .category-on-tap.mobile-nav-on .mobile-header-hamburger, .category-on-tap.has-subnav .section-subnav, .category-on-tap .mobile-header-map__icon.map-open {
     background-color: #bd6200
 }
 
-.vertical-on-tap.has-subnav .header-compact .main-header {
+.category-on-tap.has-subnav .header-compact .main-header {
     border-color: #bd6200
 }
 
-.vertical-on-tap .menu-items > li.active > a, .vertical-on-tap .menu-items > li.active > span, .vertical-on-tap .utility-nav__search .header-search-submit, .vertical-on-tap .utility-nav .dropdown-title, .vertical-on-tap .utility-nav .dropdown a, .vertical-on-tap .landing-section h2 span, .vertical-on-tap .mobile-nav .top-level li.active a, .vertical-on-tap .menu-items-magnify:after, .vertical-on-tap .custom__header .scroll__link:hover, .vertical-on-tap .custom__header .scroll__link.active-header, .vertical-on-tap .custom-header__logo--mobile .thrillist-custom-name {
+.category-on-tap .menu-items > li.active > a, .category-on-tap .menu-items > li.active > span, .category-on-tap .utility-nav__search .header-search-submit, .category-on-tap .utility-nav .dropdown-title, .category-on-tap .utility-nav .dropdown a, .category-on-tap .landing-section h2 span, .category-on-tap .mobile-nav .top-level li.active a, .category-on-tap .menu-items-magnify:after, .category-on-tap .custom__header .scroll__link:hover, .category-on-tap .custom__header .scroll__link.active-header, .category-on-tap .custom-header__logo--mobile .thrillist-custom-name {
     color: #e59200
 }
 
-.vertical-on-tap .menu-items__item--more .dropdown li.active a span {
+.category-on-tap .menu-items__item--more .dropdown li.active a span {
     background-color: rgba(189, 98, 0, 0.8)
 }
 
-.vertical-on-tap .utility-nav .dropdown:before {
+.category-on-tap .utility-nav .dropdown:before {
     border-bottom-color: #e59200
 }
 
-.vertical-on-tap .mobile-nav-categories {
+.category-on-tap .mobile-nav-categories {
     background: #bd6200
 }
 
-.vertical-on-tap .mobile-nav-categories li {
+.category-on-tap .mobile-nav-categories li {
     background: #e59200
 }
 
-.vertical-on-tap .mobile-subnav .active > a {
+.category-on-tap .mobile-subnav .active > a {
     color: #e59200
 }
 
-.vertical-on-tap .mobile-subnav .active > a:after {
+.category-on-tap .mobile-subnav .active > a:after {
     color: #e59200
 }
 
-.vertical-on-tap .stack-load-more a {
+.category-on-tap .stack-load-more a {
     background: #e59200
 }
 
-.no-touchevents .vertical-on-tap .stack-load-more:not(.loading) a:hover {
+.no-touchevents .category-on-tap .stack-load-more:not(.loading) a:hover {
     background: #bd6200
 }
 
-.vertical-on-tap .stack-load-more.loading a {
+.category-on-tap .stack-load-more.loading a {
     color: #e59200
 }
 
-.vertical-on-tap .stack-load-more .loader {
+.category-on-tap .stack-load-more .loader {
     border-color: #e59200
 }
 
-.vertical-on-tap .search-tile, .vertical-on-tap .section-filter, .vertical-on-tap .custom-header__logo--mobile .thrillist-logo-compact, .vertical-on-tap .thrillist-logo-mobile a {
+.category-on-tap .search-tile, .category-on-tap .section-filter, .category-on-tap .custom-header__logo--mobile .thrillist-logo-compact, .category-on-tap .thrillist-logo-mobile a {
     background: #e59200
 }
 
-.vertical-on-tap .mobile-header-map__icon {
+.category-on-tap .mobile-header-map__icon {
     color: #e59200;
     border-left-color: #e59200
 }
@@ -10037,6 +10037,7 @@ a.map-module__option-link {
     top: 50%;
 }
 .landing-section .entry-title {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     background: transparent none repeat scroll 0 0;
     font-size: 30px;
     line-height: 35px;
