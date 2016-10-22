@@ -53,11 +53,14 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 		if ( true === $this->is_mega_sub ) {
 			$classes .= ' mega-sub';
 		} else {
-			$classes .= ' simple-sub';
+			$classes = 'clearfix';
 		}
 
-
-		$output .= "\n$indent<ul class=\"$classes\">\n";
+		if($depth == 0){
+			$output .= "\n$indent<div class=\"dropdown\"><div class=\"dropdown-inner\"><h4>Tất cả</h4><ul class=\"$classes\">\n";
+		}else{
+			$output .= "\n$indent<ul class=\"$classes\">\n";
+		}
 	}
 
 	/**
@@ -73,7 +76,11 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 	 */
 	function end_lvl( &$output, $depth = 0, $args = array() ) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "$indent</ul>\n";
+		if($depth == 0){
+			$output .= "$indent</ul></div></div>\n";
+		}else{
+			$output .= "$indent</ul>\n";
+		}
 	}
 
 	/**
@@ -342,7 +349,7 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 		$item_output .= apply_filters( 'cherry_mega_menu_before_link_text', $link_before, $item, $args, $depth );
 
 		if ( ! $mega_settings['item-hide-text'] ) {
-			$item_output .= $link_title;
+			$item_output .= '<span>'.$link_title.'</span>';
 		}
 
 		$link_after = $args->link_after;

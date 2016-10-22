@@ -3509,8 +3509,9 @@ button {
 
     .menu-items .dropdown h4 {
         font: 18px Roboto;
+        margin-bottom: 16px;
+        padding: 15px 0 0 10px;
         text-transform: uppercase;
-        margin-bottom: 16px
     }
 
     .menu-items:hover .dropdown {
@@ -3557,14 +3558,14 @@ button {
         background-color: rgba(211, 0, 0, 0.6)
     }
 
-    .thrillist-header.lazyloaded .menu-items__item--more li a:before {
+    .menu-items__item--more li a:before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("/images/thrillist/header/tl_all_sections.jpg");
+        background-image: url("./assets/images/tl_all_sections.jpg");
         transition: transform 0.8s cubic-bezier(0.5, 0.2, 0, 1);
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden
@@ -10110,7 +10111,29 @@ a.map-module__option-link {
 .hp-border.bottom {
     bottom: 0
 }
+.menu-all ul.cherry-mega-menu-sub{
 
+}
+.menu-all ul.active-sub,
+li.menu-all:hover .dropdown,
+li.menu-all:hover .dropdown-inner{
+    left: 0;
+    opacity: 1;
+}
+.menu-item-has-children .cherry-mega-menu-sub li {
+    background-repeat: no-repeat;
+    float: left;
+    margin: 0 0 10px 10px;
+    overflow: hidden;
+    position: relative;
+}
+.cherry-mega-menu, .cherry-mega-menu-top-item.item-type-standard{
+    position: inherit !important;
+}
+.menu-all .cherry-mega-menu.total-columns-12 .menu-columns-4,
+.cherry-mega-menu-sub-item {
+    width: auto !important;
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 835px), only screen and (max-width: 835px) {
     .hp-stack-item--large__overlay {
         width: 550px
