@@ -5627,9 +5627,28 @@ a.inf-more-but:hover {
 	background-color: #395eaa;
 }
 
+
+
+
 .category-on-tap #head-main-wrap{
 	border-bottom-color: #e59200
 }
+.category-on-tap .section-subnav h3,
+.category-on-tap .section-subnav h3::before,
+.category-on-tap .mobile-nav-on .mobile-header-hamburger,
+.category-on-tap .has-subnav .section-subnav,
+.category-on-tap .mobile-header-map__icon.map-open {
+	background-color: #bd6200;
+}
+
+.category-on-tap .thrillist-logo-wrap,
+.category-on-tap .thrillist-logo-wrap::after,
+.category-on-tap .desktop-logo .logo-text,
+.category-on-tap .mobile-header-hamburger,
+.category-on-tap .custom-franchise-placeholder {
+	background-color: #e59200;
+}
+
 .category-on-tap #head-main-wrap{
 	border-bottom-color: #E55100
 }
@@ -5648,6 +5667,20 @@ a.inf-more-but:hover {
 
 .category-suc-khoe #head-main-wrap{
 	border-bottom-color: #4CAB5C
+}
+.category-suc-khoe .thrillist-logo-wrap,
+.category-suc-khoe .thrillist-logo-wrap::after,
+.category-suc-khoe .desktop-logo .logo-text,
+.category-suc-khoe .mobile-header-hamburger,
+.category-suc-khoe .custom-franchise-placeholder {
+	background-color: #4CAB5C;
+}
+.category-suc-khoe .section-subnav h3,
+.category-suc-khoe .section-subnav h3::before,
+.category-suc-khoe .mobile-nav-on .mobile-header-hamburger,
+.category-suc-khoe .has-subnav .section-subnav,
+.category-suc-khoe .mobile-header-map__icon.map-open {
+	background-color: #3d894a;
 }
 
 .category-tai-chinh #head-main-wrap{
