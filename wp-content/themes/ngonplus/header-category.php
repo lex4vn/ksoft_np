@@ -136,24 +136,7 @@
 													<?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
 												</nav>
 											</div><!--nav-menu-in-->
-											<div class="nav-right-wrap relative">
-												<div class="nav-search-wrap left relative">
-													<span class="nav-search-but left"><i class="fa fa-search fa-2"></i></span>
-													<div class="search-fly-wrap">
-														<?php get_search_form(); ?>
-													</div><!--search-fly-wrap-->
-												</div><!--nav-search-wrap-->
-												<?php if(get_option('mvp_facebook')) { ?>
-													<a href="<?php echo esc_html(get_option('mvp_facebook')); ?>" target="_blank">
-													<span class="nav-soc-but"><i class="fa fa-facebook fa-2"></i></span>
-													</a>
-												<?php } ?>
-												<?php if(get_option('mvp_twitter')) { ?>
-													<a href="<?php echo esc_html(get_option('mvp_twitter')); ?>" target="_blank">
-													<span class="nav-soc-but"><i class="fa fa-twitter fa-2"></i></span>
-													</a>
-												<?php } ?>
-											</div><!--nav-right-wrap-->
+											<?php get_search_form(); ?>
 										</div><!--nav-menu-out-->
 									</div><!--nav-logo-in-->
 								</div><!--nav-logo-out-->
