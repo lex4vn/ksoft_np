@@ -1126,7 +1126,7 @@ nav.fly-nav-menu ul li ul.sub-menu {
 ************************************************/
 
 #head-main-wrap {
-	width: 100%;height: 57px;
+	width: 100%;height: 55px;
 	background-color: #fff;
 	border-bottom: #d30000 2px solid;
 	transition: height 0.3s cubic-bezier(0.5, 0.2, 0, 1), border-bottom-color 0.3s cubic-bezier(0.5, 0.2, 0, 1);
@@ -1197,7 +1197,7 @@ nav.fly-nav-menu ul li ul.sub-menu {
 
 nav.main-menu-wrap {
 	top: 0;
-	width: 100%;
+	width: 100%;height: 55px;
 	}
 
 nav.main-menu-wrap ul {
@@ -1219,7 +1219,7 @@ nav.main-menu-wrap ul li a {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 100%;
-	opacity: 1;
+	opacity: 1;height: 55px;
 	padding: 18.5px 14px;
 	position: relative;
 	text-transform: uppercase;
@@ -1255,15 +1255,9 @@ nav.main-menu-wrap ul li.menu-item-has-children a {
 
 nav.main-menu-wrap ul li ul.sub-menu {
 	background: #fff;
-	-webkit-box-shadow: -1px 2px 5px 0 rgba(0,0,0,0.15);
-	   -moz-box-shadow: -1px 2px 5px 0 rgba(0,0,0,0.15);
-	    -ms-box-shadow: -1px 2px 5px 0 rgba(0,0,0,0.15);
-	     -o-box-shadow: -1px 2px 5px 0 rgba(0,0,0,0.15);
-		box-shadow: -1px 2px 5px 0 rgba(0,0,0,0.15);
 	position: absolute;
-		top: 50px;
-		left: 0;
-	max-width: 200px;
+		top: 57px;
+		left: -360px;
 	-webkit-transition: -webkit-transform 0.3s;
 	   -moz-transition: -moz-transform 0.3s;
 	    -ms-transition: -ms-transform 0.3s;
@@ -1274,7 +1268,7 @@ nav.main-menu-wrap ul li ul.sub-menu {
 	    -ms-transform: translateY(-999px);
 	     -o-transform: translateY(-999px);
 		transform: translateY(-999px);
-	width: auto;
+	width: 1014px;
 	z-index: -1;
 	}
 
@@ -1292,20 +1286,91 @@ nav.main-menu-wrap ul li:hover ul.sub-menu {
 	}
 
 nav.main-menu-wrap ul li ul.sub-menu li {
-	display: block;
-	float: left;
+	color: #fff;
+	display: table;
+	height: 90px;
 	position: relative;
-	width: 100%;
+	text-align: center;
+	width: 182px; margin: 10px 5px 5px 10px;
+	background-image: url("./images/all_sections.jpg");
 	}
+nav.main-menu-wrap ul li ul.sub-menu li a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 
+	transition: transform 0.8s cubic-bezier(0.5, 0.2, 0, 1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.subnav__item--food-and-drink {
+	background-position: 0 0
+}
+
+.subnav__item--travel{
+	background-position: -182px 0px
+}
+
+.subnav__item--health{
+	background-position: -364px 0px
+}
+
+.subnav__item--entertainment{
+	background-position: -546px 0px
+}
+
+.subnav__item--sex-dating{
+	background-position: -728px 0px
+}
+
+.subnav__item--videos{
+	background-position: 0px -90px
+}
+
+.subnav__item--cars{
+	background-position: -182px -90px
+}
+
+.subnav__item--tech{
+	background-position: -364px -90px
+}
+
+.subnav__item--luxe{
+	background-position: -546px -90px
+}
+
+.subnav__item--money{
+	background-position: -728px -90px
+}
+
+.subnav__item--recipes{
+	background-position: -910px 0px
+}
+
+.subnav__item--on-tap{
+	background-position: -910px -90px
+}
+
+.subnav__item--grillist{
+	background-position: -1092px 0px
+}
+.menu-all .sub-menu li a {
+	line-height: 53px;
+}
+.menu-all .sub-menu li a:hover {
+	background-color: rgba(0,0,0,0.5);
+	letter-spacing: .07em;
+	transition: background-color 0.2s ease-in-out,text-shadow 0.2s ease-in-out,letter-spacing 0.4s cubic-bezier(0.5, 0.2, 0, 1);
+}
 nav.main-menu-wrap ul li ul.sub-menu li a {
-	background: #fff;
-	border-top: 1px solid rgba(0,0,0,.1);
-	color: #333 !important;
-	font-size: 12px;
-	padding: 12px 20px;
+	color: #fff !important;
+	font-size: 14px;
 	text-transform: none;
-	width: 160px;
+	width: 150px;height: 53px;
 	}
 
 nav.main-menu-wrap ul li ul.sub-menu li a:hover {
@@ -3440,7 +3505,7 @@ span.soc-count-text {
 
 span.soc-count-num {
 	color: #444;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 26px;
 	font-weight: 900;
 	line-height: 100%;
@@ -6268,4 +6333,9 @@ body.logged-in .utility-nav .for-guests {
 	.fly-but-wrap{display:block}
 	.mobile{display: block}
 	.desktop{display: none}
+	h1.arch-head {
+		font-size: 1.4rem;
+		margin: 10px 0 20px;
+		text-align: left;
+	}
 }

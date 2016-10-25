@@ -6,7 +6,7 @@
 				<div id="home-left-col" class="relative">
 					<div id="home-mid-wrap" class="left relative">
 						<div id="archive-list-wrap" class="left relative">
-							<h1 class="arch-head"><?php _e( 'Search results for', 'mvp-text' ); ?> "<?php the_search_query() ?>"</h1>
+							<h1 class="arch-head"><?php _e( 'Kết quả tìm kiếm cho ', 'mvp-text' ); ?> "<?php the_search_query() ?>"</h1>
 							<?php if(get_option('mvp_arch_layout') == 'Column' ) { ?>
 								<ul class="archive-col-list left relative infinite-content">
 							<?php } else { ?>
