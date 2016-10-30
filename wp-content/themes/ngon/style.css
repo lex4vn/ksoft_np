@@ -6060,7 +6060,9 @@ html.no-appview-facebook .sticky-share-tools .text {
         padding-left: 5px
     }
 }
-
+.fly-but-wrap {
+    z-index: 999;
+}
 .related-item {
     position: relative;
     margin: 1.25em 0;
