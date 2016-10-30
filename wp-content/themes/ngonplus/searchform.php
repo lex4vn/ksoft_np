@@ -96,7 +96,7 @@
 					</li>
 
 					<li>
-						<a class="for-members ga-trigger" href="<?php echo wp_logout_url(); ?>" alt="My Settings" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="account_settings" data-ga-value="3">Settings</a>
+						<a class="for-members ga-trigger" href="<?php echo admin_url( 'profile.php' ); ?>" alt="My Settings" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="account_settings" data-ga-value="3">Settings</a>
 					</li>
 					<li>
 						<a class="for-members user-details-logout ga-trigger js-logout-btn" href="<?php echo wp_logout_url(); ?>" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="logout" data-ga-value="3">Log Out</a>
