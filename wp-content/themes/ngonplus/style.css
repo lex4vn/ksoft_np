@@ -6329,6 +6329,9 @@ body.logged-in .utility-nav .for-guests {
 .fly-but-wrap,.mobile{
 	display:none
 }
+.fly-but-wrap {
+	z-index: 999;
+}
 @media only screen and (max-width: 767px) {
 	.fly-but-wrap{display:block}
 	.mobile{display: block}
