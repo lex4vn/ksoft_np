@@ -6338,4 +6338,12 @@ body.logged-in .utility-nav .for-guests {
 		margin: 10px 0 20px;
 		text-align: left;
 	}
+	.nav-logo-in{
+		display: none !important;
+	}
+}
+@media (max-width: 767px) {
+	.nav-logo-in{
+		display: none !important;
+	}
 }
