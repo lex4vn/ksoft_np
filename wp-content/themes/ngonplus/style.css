@@ -6341,9 +6341,15 @@ body.logged-in .utility-nav .for-guests {
 	.nav-logo-in{
 		display: none !important;
 	}
+	#body-main-cont{
+		width: 100% !important;
+	}
 }
 @media (max-width: 767px) {
 	.nav-logo-in{
 		display: none !important;
+	}
+	#body-main-cont{
+		width: 100% !important;
 	}
 }
