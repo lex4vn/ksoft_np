@@ -1758,5 +1758,5 @@ add_filter( 'video_embed_html', 'alx_embed_html' ); // Jetpack
 /////////////////////////////////////
 
 add_theme_support( 'woocommerce' );
-
+show_admin_bar(false);
 ?>
