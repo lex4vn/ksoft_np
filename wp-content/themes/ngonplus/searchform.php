@@ -89,17 +89,17 @@
 			<div class="utility-nav__dropdown">
 				<ul>
 					<li class="for-guests user-options-login">
-						<a href="/login" class="ga-trigger" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="login" data-ga-value="3">Log In</a>
+						<a href="<?php echo wp_login_url(); ?>" class="ga-trigger" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="login" data-ga-value="3">Log In</a>
 					</li>
 					<li class="for-guests user-options-signup dropdown-nav-signup">
-						<a class="nav-vortex-signup-dropdown ga-trigger" href="https://signup.thrillist.com/" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="signup" data-ga-value="3">Sign Up</a>
+						<a class="nav-vortex-signup-dropdown ga-trigger" href="#" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="signup" data-ga-value="3">Sign Up</a>
 					</li>
 
 					<li>
-						<a class="for-members ga-trigger" href="/account" alt="My Settings" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="account_settings" data-ga-value="3">Settings</a>
+						<a class="for-members ga-trigger" href="<?php echo wp_logout_url(); ?>" alt="My Settings" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="account_settings" data-ga-value="3">Settings</a>
 					</li>
 					<li>
-						<a class="for-members user-details-logout ga-trigger js-logout-btn" href="#" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="logout" data-ga-value="3">Log Out</a>
+						<a class="for-members user-details-logout ga-trigger js-logout-btn" href="<?php echo wp_logout_url(); ?>" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="logout" data-ga-value="3">Log Out</a>
 					</li>
 				</ul>
 			</div>
