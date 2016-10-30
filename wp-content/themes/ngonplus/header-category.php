@@ -129,7 +129,7 @@
 										</a>
 									</div>
 
-									<div class="nav-logo-in">
+									<div class="desktop nav-logo-in">
 										<div class="nav-menu-out">
 											<div class="nav-menu-in">
 												<nav class="main-menu-wrap left">
