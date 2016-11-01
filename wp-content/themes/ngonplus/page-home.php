@@ -456,7 +456,7 @@
 			<div id="home-left-wrap" class="left relative">
 				<div id="home-left-col" class="relative">
 					<?php $mvp_featured_cat = get_option('mvp_featured_cat'); if ($mvp_featured_cat == "true") { if ( $paged < 2 ) { ?>
-						<?php $mvp_feat_cat_layout = get_option('mvp_feat_cat_layout'); if( $mvp_feat_cat_layout == "Featured 1" ) { ?>
+						<?php $mvp_feat_cat_layout = get_option('mvp_feat_cat_layout'); if( $mvp_feat_cat_layout == "Featured 3" ) { ?>
 							<div id="home-feat-wrap" class="left relative">
 								<?php global $do_not_duplicate; global $post; $current_category = single_cat_title("", false); $category_id = get_cat_ID($sub_category->term_id); $cat_posts = new WP_Query(array( 'cat' => $sub_category->term_id, 'posts_per_page' => '1'  )); while($cat_posts->have_posts()) : $cat_posts->the_post(); $do_not_duplicate[] = $post->ID; if (isset($do_not_duplicate)) { ?>
 									<div class="home-feat-main left relative">
@@ -599,7 +599,7 @@
 									<?php } ?>
 								</ul>
 								<?php $mvp_infinite_scroll = get_option('mvp_infinite_scroll'); if ($mvp_infinite_scroll == "true") { if (isset($mvp_infinite_scroll)) { ?>
-									<a href="#" class="inf-more-but"><?php _e( 'More Posts', 'mvp-text' ); ?></a>
+									<a style="display: none;" href="#" class="inf-more-but"><?php _e( 'More Posts', 'mvp-text' ); ?></a>
 								<?php } } ?>
 								<div class="nav-links">
 									<?php if (function_exists("pagination")) { pagination($wp_query->max_num_pages); } ?>
