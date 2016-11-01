@@ -458,7 +458,9 @@
 					<?php $mvp_featured_cat = get_option('mvp_featured_cat'); if ($mvp_featured_cat == "true") { if ( $paged < 2 ) { ?>
 						<?php $mvp_feat_cat_layout = get_option('mvp_feat_cat_layout'); if( $mvp_feat_cat_layout == "Featured 1" ) { ?>
 							<div id="home-feat-wrap" class="left relative">
-								<?php global $do_not_duplicate; global $post; $current_category = single_cat_title("", false); $category_id = get_cat_ID($sub_category->term_id); $cat_posts = new WP_Query(array( 'cat' => $sub_category->term_id, 'posts_per_page' => '1'  )); while($cat_posts->have_posts()) : $cat_posts->the_post(); $do_not_duplicate[] = $post->ID; if (isset($do_not_duplicate)) { ?>
+								<?php global $do_not_duplicate; global $post; $current_category = single_cat_title("", false); $category_id = get_cat_ID($sub_category->term_id); $cat_posts = new WP_Query(array( 'cat' => $sub_category->term_id, 'posts_per_page' => '1'  )); while($cat_posts->have_posts()) : $cat_posts->the_post();
+									//$do_not_duplicate[] = $post->ID;
+									if (isset($do_not_duplicate)) { ?>
 									<div class="home-feat-main left relative">
 										<a href="<?php the_permalink(); ?>" rel="bookmark">
 											<div id="home-feat-img" class="left relative">
