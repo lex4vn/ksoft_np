@@ -434,15 +434,7 @@
 				</div><!--home-wrap-out2-->
 			</div><!--home-left-wrap-->
 		</div><!--home-wrap-in1-->
-		<div id="tab-col3" class="home-right-col relative tab-col-cont" style="display: none;">
-			<?php if(get_option('mvp_home_side') == 'Popular') { ?>
-				<?php get_template_part('popular'); ?>
-			<?php } else if(get_option('mvp_home_side') == 'Latest') { ?>
-				<?php get_template_part('latest'); ?>
-			<?php } else { ?>
-				<?php get_sidebar(); ?>
-			<?php } ?>
-		</div><!--home-right-col-->
+
 	</div><!--home-wrap-out1-->
 </div><!--home-main-wrap-->
 
@@ -461,11 +453,11 @@
 							<div id="home-feat-wrap" class="left relative">
 								<?php global $do_not_duplicate;
 								global $post;
-								//$current_category = single_cat_title("", false);
+								$current_category = single_cat_title("", false);
 								$category_id = get_cat_ID($sub_category->term_id);
 								$cat_posts = new WP_Query(array( 'cat' => $category_id, 'posts_per_page' => '1'  ));
 								while($cat_posts->have_posts()) : $cat_posts->the_post();
-									//$do_not_duplicate[] = $post->ID;
+									$do_not_duplicate[] = $post->ID;
 									if (isset($do_not_duplicate)) { ?>
 									<div class="home-feat-main left relative">
 										<a href="<?php the_permalink(); ?>" rel="bookmark">
