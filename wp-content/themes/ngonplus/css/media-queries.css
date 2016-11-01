@@ -318,6 +318,9 @@
 		margin-left: 0; /* 20px / 678px */
 		width: 100%; /* 698px / 678px */
 	}
+	.category-main-wrap ul.archive-col-list{
+		margin-top: 15px;
+	}
 	ul.archive-col-list {
 		margin-left: -2.94985250737%; /* 20px / 678px */
 		width: 102.94985250737%; /* 698px / 678px */
@@ -332,6 +335,9 @@
 	}
 	#home-featured-top ul.archive-col-list li:first-child .archive-list-out{
 		margin-left: 0; /* 20px / 698px */
+	}
+	.category-main-wrap ul.archive-col-list li{
+		height: auto;
 	}
 	ul.archive-col-list li {
 		margin-left: 2.86532951289%; /* 20px / 698px */
