@@ -45,6 +45,55 @@
 					</div><!--home-feat-main-->
 				<?php } endwhile; wp_reset_postdata(); ?>
 			</div><!--home-feat-wrap-->
+
+			<div id="home-featured-top" class="home-mid-wrap relative">
+				<ul class="archive-col-list left relative infinite-content">
+				<?php if (isset($do_not_duplicate)) { $recent = new WP_Query(array( 'post__not_in' => $do_not_duplicate, 'tag' => get_option('mvp_feat_posts_tags'), 'posts_per_page' => '5'  )); while($recent->have_posts()) : $recent->the_post(); $do_not_duplicate[] = $post->ID; if (isset($do_not_duplicate)) { ?>
+					<li class="infinite-post">
+						<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
+							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+								<div class="archive-list-out">
+									<div class="archive-list-img left relative">
+										<?php the_post_thumbnail('mvp-medium-thumb', array( 'class' => 'reg-img' )); ?>
+										<?php the_post_thumbnail('mvp-small-thumb', array( 'class' => 'mob-img' )); ?>
+										<?php $post_views = get_post_meta($post->ID, "post_views_count", true); if ( $post_views >= 1) { ?>
+											<div class="feat-info-wrap">
+												<div class="feat-info-views">
+													<i class="fa fa-eye fa-2"></i> <span class="feat-info-text"><?php mvp_post_views(); ?></span>
+												</div><!--feat-info-views-->
+												<?php $disqus_id = get_option('mvp_disqus_id'); if ( ! $disqus_id ) { if (get_comments_number()==0) { } else { ?>
+													<div class="feat-info-comm">
+														<i class="fa fa-comment"></i> <span class="feat-info-text"><?php comments_number( '0', '1', '%' ); ?></span>
+													</div><!--feat-info-comm-->
+												<?php } } ?>
+											</div><!--feat-info-wrap-->
+										<?php } ?>
+										<?php if ( has_post_format( 'video' )) { ?>
+											<div class="feat-vid-but">
+												<i class="fa fa-play fa-3"></i>
+											</div><!--feat-vid-but-->
+										<?php } ?>
+									</div><!--archive-list-img-->
+									<div class="archive-list-in">
+										<div class="archive-list-text left relative">
+											<h2><?php the_title(); ?></h2>
+
+										</div><!--archive-list-text-->
+									</div><!--archive-list-in-->
+								</div><!--archive-list-out-->
+							</a>
+						<?php } else { ?>
+							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+								<div class="archive-list-text left relative">
+									<h2><?php the_title(); ?></h2>
+									<p><?php echo wp_trim_words( get_the_excerpt(), 22, '...' ); ?></p>
+								</div><!--archive-list-text-->
+							</a>
+						<?php } ?>
+					</li>
+				<?php } endwhile; wp_reset_postdata(); } ?>
+				</ul>
+			</div><!--feat-top2-right-wrap-->
 		</div><!--feat-top-wrap-->
 	<?php } else if( $mvp_feat_layout == "Featured 4" ) { ?>
 		<div id="feat-top-wrap" class="left relative">
@@ -385,7 +434,7 @@
 				</div><!--home-wrap-out2-->
 			</div><!--home-left-wrap-->
 		</div><!--home-wrap-in1-->
-		<div id="tab-col3" class="home-right-col relative tab-col-cont">
+		<div id="tab-col3" class="home-right-col relative tab-col-cont" style="display: none;">
 			<?php if(get_option('mvp_home_side') == 'Popular') { ?>
 				<?php get_template_part('popular'); ?>
 			<?php } else if(get_option('mvp_home_side') == 'Latest') { ?>
@@ -396,4 +445,173 @@
 		</div><!--home-right-col-->
 	</div><!--home-wrap-out1-->
 </div><!--home-main-wrap-->
+
+<?php
+	$categories = get_categories( array('orderby' => 'name') );
+	foreach($categories as $sub_category){
+?>
+	<div class="home-main-wrap relative">
+	<div class="home-wrap-out1">
+		<div class="home-wrap-in1">
+			<div id="home-left-wrap" class="left relative">
+				<div id="home-left-col" class="relative">
+					<?php $mvp_featured_cat = get_option('mvp_featured_cat'); if ($mvp_featured_cat == "true") { if ( $paged < 2 ) { ?>
+						<?php $mvp_feat_cat_layout = get_option('mvp_feat_cat_layout'); if( $mvp_feat_cat_layout == "Featured 1" ) { ?>
+							<div id="home-feat-wrap" class="left relative">
+								<?php global $do_not_duplicate; global $post; $current_category = single_cat_title("", false); $category_id = get_cat_ID($sub_category->term_id); $cat_posts = new WP_Query(array( 'cat' => $sub_category->term_id, 'posts_per_page' => '1'  )); while($cat_posts->have_posts()) : $cat_posts->the_post(); $do_not_duplicate[] = $post->ID; if (isset($do_not_duplicate)) { ?>
+									<div class="home-feat-main left relative">
+										<a href="<?php the_permalink(); ?>" rel="bookmark">
+											<div id="home-feat-img" class="left relative">
+												<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
+													<?php the_post_thumbnail('mvp-post-thumb', array( 'class' => 'reg-img' )); ?>
+													<?php the_post_thumbnail('mvp-medium-thumb', array( 'class' => 'mob-img' )); ?>
+												<?php } ?>
+											</div><!--home-feat-img-->
+											<div id="home-feat-text">
+												<?php if(get_post_meta($post->ID, "mvp_featured_headline", true)): ?>
+													<h2><?php echo esc_html(get_post_meta($post->ID, "mvp_featured_headline", true)); ?></h2>
+													<p><?php the_title(); ?></p>
+												<?php else: ?>
+													<h2 class="stand-title"><?php the_title(); ?></h2>
+												<?php endif; ?>
+											</div><!--home-feat-text-->
+											<?php $post_views = get_post_meta($post->ID, "post_views_count", true); if ( $post_views >= 1) { ?>
+												<div class="feat-info-wrap">
+													<div class="feat-info-views">
+														<i class="fa fa-eye fa-2"></i> <span class="feat-info-text"><?php mvp_post_views(); ?></span>
+													</div><!--feat-info-views-->
+													<?php $disqus_id = get_option('mvp_disqus_id'); if ( ! $disqus_id ) { if (get_comments_number()==0) { } else { ?>
+														<div class="feat-info-comm">
+															<i class="fa fa-comment"></i> <span class="feat-info-text"><?php comments_number( '0', '1', '%' ); ?></span>
+														</div><!--feat-info-comm-->
+													<?php } } ?>
+												</div><!--feat-info-wrap-->
+											<?php } ?>
+											<?php if ( has_post_format( 'video' )) { ?>
+												<div class="feat-vid-but">
+													<i class="fa fa-play fa-3"></i>
+												</div><!--feat-vid-but-->
+											<?php } ?>
+										</a>
+									</div><!--home-feat-main-->
+								<?php } endwhile; wp_reset_postdata(); ?>
+							</div><!--home-feat-wrap-->
+						<?php } ?>
+					<?php } } ?>
+					<div class="home-mid-wrap left relative">
+						<div id="archive-list-wrap" class="left relative">
+							<?php if(get_option('mvp_arch_layout') == 'Column' ) { ?>
+							<ul class="archive-col-list left relative infinite-content">
+								<?php } else { ?>
+								<ul class="archive-list left relative infinite-content">
+									<?php } ?>
+									<?php global $do_not_duplicate; if (isset($do_not_duplicate)) { ?>
+										<?php if ($cat_posts->have_posts()) : while ($cat_posts->have_posts()) : $cat_posts->the_post(); if (in_array($post->ID, $do_not_duplicate)) continue; ?>
+											<li class="infinite-post">
+												<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
+													<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+														<div class="archive-list-out">
+															<div class="archive-list-img left relative">
+																<?php the_post_thumbnail('mvp-medium-thumb', array( 'class' => 'reg-img' )); ?>
+																<?php the_post_thumbnail('mvp-small-thumb', array( 'class' => 'mob-img' )); ?>
+																<?php $post_views = get_post_meta($post->ID, "post_views_count", true); if ( $post_views >= 1) { ?>
+																	<div class="feat-info-wrap">
+																		<div class="feat-info-views">
+																			<i class="fa fa-eye fa-2"></i> <span class="feat-info-text"><?php mvp_post_views(); ?></span>
+																		</div><!--feat-info-views-->
+																		<?php $disqus_id = get_option('mvp_disqus_id'); if ( ! $disqus_id ) { if (get_comments_number()==0) { } else { ?>
+																			<div class="feat-info-comm">
+																				<i class="fa fa-comment"></i> <span class="feat-info-text"><?php comments_number( '0', '1', '%' ); ?></span>
+																			</div><!--feat-info-comm-->
+																		<?php } } ?>
+																	</div><!--feat-info-wrap-->
+																<?php } ?>
+																<?php if ( has_post_format( 'video' )) { ?>
+																	<div class="feat-vid-but">
+																		<i class="fa fa-play fa-3"></i>
+																	</div><!--feat-vid-but-->
+																<?php } ?>
+															</div><!--archive-list-img-->
+															<div class="archive-list-in">
+																<div class="archive-list-text left relative">
+																	<h2><?php the_title(); ?></h2>
+																	<p><?php echo wp_trim_words( get_the_excerpt(), 22, '...' ); ?></p>
+																</div><!--archive-list-text-->
+															</div><!--archive-list-in-->
+														</div><!--archive-list-out-->
+													</a>
+												<?php } else { ?>
+													<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+														<div class="archive-list-text left relative">
+															<h2><?php the_title(); ?></h2>
+															<p><?php echo wp_trim_words( get_the_excerpt(), 22, '...' ); ?></p>
+														</div><!--archive-list-text-->
+													</a>
+												<?php } ?>
+											</li>
+										<?php endwhile; endif; ?>
+									<?php } else { ?>
+										<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+											<li class="infinite-post">
+												<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
+													<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+														<div class="archive-list-out">
+															<div class="archive-list-img left relative">
+																<?php the_post_thumbnail('mvp-medium-thumb', array( 'class' => 'reg-img' )); ?>
+																<?php the_post_thumbnail('mvp-small-thumb', array( 'class' => 'mob-img' )); ?>
+																<?php $post_views = get_post_meta($post->ID, "post_views_count", true); if ( $post_views >= 1) { ?>
+																	<div class="feat-info-wrap">
+																		<div class="feat-info-views">
+																			<i class="fa fa-eye fa-2"></i> <span class="feat-info-text"><?php mvp_post_views(); ?></span>
+																		</div><!--feat-info-views-->
+																		<?php $disqus_id = get_option('mvp_disqus_id'); if ( ! $disqus_id ) { if (get_comments_number()==0) { } else { ?>
+																			<div class="feat-info-comm">
+																				<i class="fa fa-comment"></i> <span class="feat-info-text"><?php comments_number( '0', '1', '%' ); ?></span>
+																			</div><!--feat-info-comm-->
+																		<?php } } ?>
+																	</div><!--feat-info-wrap-->
+																<?php } ?>
+																<?php if ( has_post_format( 'video' )) { ?>
+																	<div class="feat-vid-but">
+																		<i class="fa fa-play fa-3"></i>
+																	</div><!--feat-vid-but-->
+																<?php } ?>
+															</div><!--archive-list-img-->
+															<div class="archive-list-in">
+																<div class="archive-list-text left relative">
+																	<h2><?php the_title(); ?></h2>
+																	<p><?php echo wp_trim_words( get_the_excerpt(), 22, '...' ); ?></p>
+																</div><!--archive-list-text-->
+															</div><!--archive-list-in-->
+														</div><!--archive-list-out-->
+													</a>
+												<?php } else { ?>
+													<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+														<div class="archive-list-text left relative">
+															<h2><?php the_title(); ?></h2>
+															<p><?php echo wp_trim_words( get_the_excerpt(), 22, '...' ); ?></p>
+														</div><!--archive-list-text-->
+													</a>
+												<?php } ?>
+											</li>
+										<?php endwhile; endif; ?>
+									<?php } ?>
+								</ul>
+								<?php $mvp_infinite_scroll = get_option('mvp_infinite_scroll'); if ($mvp_infinite_scroll == "true") { if (isset($mvp_infinite_scroll)) { ?>
+									<a href="#" class="inf-more-but"><?php _e( 'More Posts', 'mvp-text' ); ?></a>
+								<?php } } ?>
+								<div class="nav-links">
+									<?php if (function_exists("pagination")) { pagination($wp_query->max_num_pages); } ?>
+								</div><!--nav-links-->
+						</div><!--archive-list-wrap-->
+					</div><!--home-mid-wrap-->
+				</div><!--home-left-col-->
+			</div><!--home-left-wrap-->
+		</div><!--home-wrap-in1-->
+
+	</div><!--home-wrap-out1-->
+</div><!--home-main-wrap-->
+
+<?php	}
+?>
 <?php get_footer(); ?>

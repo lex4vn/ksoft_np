@@ -1141,6 +1141,9 @@ nav.fly-nav-menu ul li ul.sub-menu {
 	bottom: -27px;
 	left: 0;
 }
+#home-featured-top{
+	margin-top: 15px;
+}
 #head-main-top {
 	width: 100%;
 	z-index: 99999;
