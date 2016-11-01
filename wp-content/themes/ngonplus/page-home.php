@@ -455,7 +455,7 @@
 								global $post;
 								$current_category = single_cat_title("", false);
 								$category_id = get_cat_ID($sub_category->term_id);
-								$cat_posts = new WP_Query(array( 'cat' => $category_id, 'posts_per_page' => '1'  ));
+								$cat_posts = new WP_Query(array( 'cat' => $sub_category->term_id, 'posts_per_page' => '1'  ));
 								while($cat_posts->have_posts()) : $cat_posts->the_post();
 									$do_not_duplicate[] = $post->ID;
 									if (isset($do_not_duplicate)) { ?>
