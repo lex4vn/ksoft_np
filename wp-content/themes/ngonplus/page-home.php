@@ -450,7 +450,6 @@
 	$categories = get_categories( array('orderby' => 'name') );
 	foreach($categories as $sub_category){
 ?>
-		<br/>
 	<div class="category-main-wrap home-main-wrap relative">
 	<div class="home-wrap-out1">
 		<div class="home-wrap-in1">
