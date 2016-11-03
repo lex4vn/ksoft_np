@@ -2543,13 +2543,13 @@ ul.archive-list li .feat-vid-but,
 
 .home-wrap-out1 {
 	float: left;
-	margin-right: -315px;
+
 	position: relative;
 	width: 100%;
 	}
 
 .home-wrap-in1 {
-	margin-right: 315px;
+
 	}
 
 #home-left-wrap {
@@ -4725,8 +4725,7 @@ ul.archive-list {
 	}
 
 ul.archive-col-list {
-	margin-left: -1.94552529183%; /* 20px / 1028px */ 
-	width: 101.94552529183%; /* 1048px / 1028px */
+	width: 100%;
 	}
 
 ul.archive-list li {
@@ -5906,12 +5905,10 @@ a.inf-more-but:hover {
 	color: #fff
 }
 #body-main-cont {
-	width: 970px;
 	margin: 0 auto;
 	float: none;
 }
 .home-wrap-out1 {
-	width: 970px;
 	margin: 0 auto;
 }
 
@@ -6336,9 +6333,7 @@ body.logged-in .utility-nav .for-guests {
 	opacity: 1
 }
 
-#home-left-wrap {
-	width: 970px;
-}
+
 .fly-but-wrap,.mobile{
 	display:none
 }
