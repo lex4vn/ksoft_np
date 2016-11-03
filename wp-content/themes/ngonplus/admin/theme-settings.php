@@ -752,6 +752,12 @@ $options[] = array( "name" => __('Header Leaderboard Ad Code','mvp-text'),
 			"std" => "",
 			"type" => "textarea");
 
+$options[] = array( "name" => __('Middle Leaderboard Ad Code','mvp-text'),
+	"desc" => "Enter your ad code (Eg. Google Adsense) for the 970x90 ad area. You can also place a 728x90 ad in this spot.",
+	"id" => $shortname."_middle_leader",
+	"std" => "",
+	"type" => "textarea");
+
 $options[] = array( "name" => __('Responsive Ad Area Below Article','mvp-text'),
 			"desc" => "Enter your ad code (Eg. Google Adsense) to activate the responsive ad area that will be displayed below the content of each article.",
 			"id" => $shortname."_article_ad",

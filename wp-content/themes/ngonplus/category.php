@@ -369,8 +369,9 @@
 														</div><!--archive-list-img-->
 														<div class="archive-list-in">
 															<div class="archive-list-text left relative">
+															    <span class="feat-cat"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></span>
 																<h2><?php the_title(); ?></h2>
-																<p><?php echo wp_trim_words( get_the_excerpt(), 22, '...' ); ?></p>
+
 															</div><!--archive-list-text-->
 														</div><!--archive-list-in-->
 													</div><!--archive-list-out-->
@@ -378,8 +379,8 @@
 												<?php } else { ?>
 													<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
 													<div class="archive-list-text left relative">
+													    <span class="feat-cat"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></span>
 														<h2><?php the_title(); ?></h2>
-														<p><?php echo wp_trim_words( get_the_excerpt(), 22, '...' ); ?></p>
 													</div><!--archive-list-text-->
 													</a>
 												<?php } ?>

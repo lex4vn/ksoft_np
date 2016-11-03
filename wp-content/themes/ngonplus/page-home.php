@@ -21,7 +21,7 @@
 								<h2><?php echo esc_html(get_post_meta($post->ID, "mvp_featured_headline", true)); ?></h2>
 								<p><?php the_title(); ?></p>
 							<?php else: ?>
-								<h2 class="stand-title"><?php the_title(); ?></h2>
+								<h2 class="stand-title"><span><?php the_title(); ?></span></h2>
 							<?php endif; ?>
 						</div><!--home-feat-text-->
 						<?php $post_views = get_post_meta($post->ID, "post_views_count", true); if ( $post_views >= 1) { ?>
@@ -76,7 +76,8 @@
 									</div><!--archive-list-img-->
 									<div class="archive-list-in">
 										<div class="archive-list-text left relative">
-											<h2><?php the_title(); ?></h2>
+											<span class="feat-cat"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></span>
+											<h2 class="title-featured-post"><span><?php the_title(); ?></span></h2>
 
 										</div><!--archive-list-text-->
 									</div><!--archive-list-in-->
@@ -437,7 +438,11 @@
 
 	</div><!--home-wrap-out1-->
 </div><!--home-main-wrap-->
-
+<?php if(get_option('mvp_middle_leader')) { ?>
+	<div id="leader-wrap" class="left relative">
+		<?php $ad970 = get_option('mvp_middle_leader'); if ($ad970) { echo html_entity_decode($ad970); } ?>
+	</div><!--leader-wrap-->
+<?php } ?>
 <?php
 	$categories = get_categories( array('orderby' => 'name') );
 	foreach($categories as $sub_category){
@@ -461,18 +466,19 @@
 									if (isset($do_not_duplicate)) { ?>
 									<div class="home-feat-main left relative">
 										<a href="<?php the_permalink(); ?>" rel="bookmark">
-											<div id="home-feat-img" class="left relative">
+											<div class="home-feat-img left relative">
 												<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
 													<?php the_post_thumbnail('mvp-post-thumb', array( 'class' => 'reg-img' )); ?>
 													<?php the_post_thumbnail('mvp-medium-thumb', array( 'class' => 'mob-img' )); ?>
 												<?php } ?>
 											</div><!--home-feat-img-->
 											<div id="home-feat-text">
+												<span class="feat-cat"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></span>
 												<?php if(get_post_meta($post->ID, "mvp_featured_headline", true)): ?>
 													<h2><?php echo esc_html(get_post_meta($post->ID, "mvp_featured_headline", true)); ?></h2>
 													<p><?php the_title(); ?></p>
 												<?php else: ?>
-													<h2 class="stand-title"><?php the_title(); ?></h2>
+													<h2 class="stand-title"><span><?php the_title(); ?></span></h2>
 												<?php endif; ?>
 											</div><!--home-feat-text-->
 											<?php $post_views = get_post_meta($post->ID, "post_views_count", true); if ( $post_views >= 1) { ?>
@@ -535,7 +541,9 @@
 															</div><!--archive-list-img-->
 															<div class="archive-list-in">
 																<div class="archive-list-text left relative">
+																	<span class="feat-cat"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></span>
 																	<h2><?php the_title(); ?></h2>
+																	<p class="pubdate"><?php echo get_the_date(); ?></p>
 
 																</div><!--archive-list-text-->
 															</div><!--archive-list-in-->

@@ -632,7 +632,7 @@ a:focus {
 #site,
 #site-wrap {
 	overflow: hidden;
-	width: 100%;
+	width: 100%;background: #e9e9e9;
 	}
 
 .relative {
@@ -2258,7 +2258,7 @@ ul.feat-wide-sub-list li:hover .feat-wide-sub-text h2 {
 	width: 100%;
 	}
 
-#home-feat-img {
+#home-feat-img, .home-feat-img {
 	background: #000;
 	line-height: 0;
 	width: 100%;
@@ -2315,8 +2315,12 @@ span.feat-cat {
 	padding: 4px 10px;
 	text-transform: uppercase;
 	}
-
+h2.stand-title{
+	width:54% !important;
+}
 #home-feat-wrap span.feat-cat {
+	position: absolute;
+	top:20px;left: 0;
 	margin-bottom: 8px;
 	}
 
@@ -2745,8 +2749,7 @@ span.side-list-cat {
 	}
 
 #home-mid-wrap {
-	background: #fff;
-	padding-top: 20px;
+	padding-top: 10px;
 	width: 100%;
 	}
 
@@ -4765,8 +4768,8 @@ ul.archive-list li:last-child {
 
 ul.archive-col-list li .archive-list-out,
 ul.archive-col-list li .archive-list-in {
-	float: left;
-	margin-left: 0;
+	float: left;background: white;
+	margin-left: 0;min-height: 240px;
 	}
 
 .archive-list-img {
@@ -4779,7 +4782,6 @@ ul.archive-col-list li .archive-list-in {
 	}
 
 ul.archive-col-list li .archive-list-img {
-	margin: 0 0 10px 0;
 	width: 100%;
 	}
 
@@ -4814,7 +4816,12 @@ ul.archive-col-list li:hover .archive-list-img img {
 	margin-top: 5px;
 	width: 100%;
 	}
-
+.archive-list-text p.pubdate{
+	padding:5px;font-size: .8rem;
+}
+h2.title-featured-post span{
+	font-size: .8rem;font-weight: 700;
+}
 #archive-list-wrap #infscr-loading {
 	margin-bottom: 0;
 	}
@@ -6334,6 +6341,35 @@ body.logged-in .utility-nav .for-guests {
 }
 .fly-but-wrap {
 	z-index: 999;
+}
+#home-feat-img img,
+.home-feat-img img,
+.infinite-post img{
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.5s;
+}
+#home-feat-img:hover img,
+.home-feat-img:hover img,
+.infinite-post:hover img {
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.infinite-post{
+
+}
+.infinite-post h2{
+	padding:5px;
+}
+h2.title-featured-post{
+	width: 176px;
+}
+h2.stand-title span{
+	color: black;
+	background: white;
+	line-height: 50px;
 }
 @media only screen and (max-width: 767px) {
 	.fly-but-wrap{display:block}
