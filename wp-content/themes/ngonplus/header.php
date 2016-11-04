@@ -169,10 +169,10 @@
 				</div><!--col-tabs-wrap-->
 			<?php } ?>
 			<?php if (is_single()) { ?>
-				<div id="body-main-wrap" class="left relative" itemscope itemtype="http://schema.org/NewsArticle">
+				<div id="body-main-wrap" class="relative" itemscope itemtype="http://schema.org/NewsArticle">
 					<meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="<?php the_permalink(); ?>"/>
 			<?php } else { ?>
-				<div id="body-main-wrap" class="left relative">
+				<div id="body-main-wrap" class="relative">
 			<?php } ?>
 				<?php get_template_part('featured'); ?>
 				<?php if (is_single()) { ?>

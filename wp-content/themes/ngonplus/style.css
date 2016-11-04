@@ -2516,21 +2516,19 @@ ul.archive-list li .feat-vid-but,
 #body-main-wrap {
 	padding-top: 15px;
 	width: 100%;
-	}
+	margin:0 auto;
+}
 
 .body-top-pad {
 	padding-top: 65px !important;
 	}
 
 .body-main-out {
-	float: right;
-	margin-left: -200px;
-	right: 100px;
 	width: 100%;
 	}
 
 .body-main-in {
-	margin-left: 200px;
+
 	}
 
 #body-main-cont {

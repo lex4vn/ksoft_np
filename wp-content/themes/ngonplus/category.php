@@ -27,10 +27,10 @@
 	</div><!--col-tabs-wrap-->
 <?php } ?>
 <?php if (is_single()) { ?>
-	<div id="body-main-wrap" class="left relative" itemscope itemtype="http://schema.org/NewsArticle">
+	<div id="body-main-wrap" class="relative" itemscope itemtype="http://schema.org/NewsArticle">
 	<meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="<?php the_permalink(); ?>"/>
 <?php } else { ?>
-	<div id="body-main-wrap" class="left relative">
+	<div id="body-main-wrap" class="relative">
 <?php } ?>
 <?php get_template_part('featured'); ?>
 <?php if (is_single()) { ?>
@@ -343,6 +343,7 @@
 								<?php global $do_not_duplicate; if (isset($do_not_duplicate)) { ?>
 									<?php if (have_posts()) : while (have_posts()) : the_post(); if (in_array($post->ID, $do_not_duplicate)) continue; ?>
 											<li class="infinite-post">
+											<div class="box-infinite-post">
 												<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
 													<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
 													<div class="archive-list-out">
@@ -384,7 +385,9 @@
 													</div><!--archive-list-text-->
 													</a>
 												<?php } ?>
+												</div>
 											</li>
+
 									<?php endwhile; endif; ?>
 								<?php } else { ?>
 									<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
