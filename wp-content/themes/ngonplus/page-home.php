@@ -512,7 +512,7 @@
 								<ul class="archive-list left relative infinite-content">
 									<?php } ?>
 									<?php global $do_not_duplicate; if (isset($do_not_duplicate)) { ?>
-									<?php $category_id = get_cat_ID($sub_category->term_id); $cat_posts = new WP_Query(array( 'cat' => $sub_category->term_id, 'posts_per_page' => '3'  )); ?>
+									<?php $category_id = get_cat_ID($sub_category->term_id); $cat_posts = new WP_Query(array( 'cat' => $sub_category->term_id, 'posts_per_page' => '4'  )); ?>
 										<?php if ($cat_posts->have_posts()) : while ($cat_posts->have_posts()) : $cat_posts->the_post(); if (in_array($post->ID, $do_not_duplicate)) continue; ?>
 											<li class="infinite-post">
 												<div class="box-infinite-post">

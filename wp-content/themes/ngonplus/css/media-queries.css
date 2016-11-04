@@ -1,3 +1,18 @@
+ul.archive-col-list li {
+	margin-left: 0 !important;
+	width: 33.3333333% !important;
+	height: 220px;
+}
+ul.archive-col-list li .box-infinite-post{
+	padding-right: 15px;
+}
+ul.archive-col-list li:last-child .box-infinite-post{
+	padding-right: 0;
+}
+
+.category-main-wrap ul.archive-col-list {
+	margin-top: 15px !important;
+}
 @media screen and (min-width: 1601px) {
 
 	.home-left-col,
@@ -4474,7 +4489,7 @@
 		
 	ul.archive-col-list li {
 		margin-left: 0;
-		width: 100%;
+		width: 100% !important;
 		height: 300px;
 		}
 		
