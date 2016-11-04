@@ -4714,9 +4714,8 @@ h1.arch-head {
 	}
 
 #archive-list-wrap {
-	padding: 0 1.87265917603% 20px; /* 20px / 1068px */
-	width: 96.2546816479%; /* 1028px / 1068px */
-	}
+	width: 100%;
+}
 
 ul.archive-list {
 	width: 100%;
