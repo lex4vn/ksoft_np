@@ -1791,10 +1791,15 @@
 		
 	ul.archive-col-list li {
 		margin-left: 0;
-		width: 30%;
+		width: 33.3333333%;
 		height: 220px;
 		}
-		
+	ul.archive-col-list li .box-infinite-post{
+		padding-right: 15px;
+	}
+	ul.archive-col-list li:last-child .box-infinite-post{
+		padding-right: 0;
+	}
 	h1.arch-head {
 		line-height: 130%;
 		margin: 10px 0 30px;
