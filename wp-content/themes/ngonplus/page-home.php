@@ -543,7 +543,7 @@
 															<div class="archive-list-in">
 																<div class="archive-list-text left relative">
 																	<span class="feat-cat"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></span>
-																	<h2><?php the_title(); ?></h2>
+																	<h2><span><?php the_title(); ?></span></h2>
 																	<p class="pubdate"><?php echo get_the_date(); ?></p>
 
 																</div><!--archive-list-text-->

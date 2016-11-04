@@ -2222,12 +2222,7 @@ ul.feat-wide-sub-list li:hover .feat-wide-sub-text h2 {
 	}
 
 .feat-top2-right-text {
-	background-image: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
-	background-image: -ms-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
-	background-image: -o-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
-	background-image: -webkit-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
-	background-image: -webkit-gradient(linear, center top, center bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.7)));
-	background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
+
 	padding: 30px 4.36205016358% 15px; /* 15px / 343.875px */
 	position: absolute;
 		left: 0;
@@ -2241,11 +2236,6 @@ ul.feat-wide-sub-list li:hover .feat-wide-sub-text h2 {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 130%;
-	-webkit-text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-	   -moz-text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-	    -ms-text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-	     -o-text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-		text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 	width: 100%;
 	}
 
@@ -2279,12 +2269,6 @@ ul.feat-wide-sub-list li:hover .feat-wide-sub-text h2 {
 	}
 
 #home-feat-text {
-	background-image: -webkit-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
-	   background-image: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
-	    background-image: -ms-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
-	     background-image: -o-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
-		background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
-	background-image: -webkit-gradient(linear, center top, center bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.7)));
 	padding: 50px 2.62123197903% 35px; /* 20px / 763px */
 	position: absolute;
 		left: 0;
@@ -2304,24 +2288,24 @@ ul.feat-wide-sub-list li:hover .feat-wide-sub-text h2 {
 	}
 
 span.feat-cat {
-	clear: both;
 	color: #fff;
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
-	font-size: .65rem;
-	font-weight: 700;
-	line-height: 100%;
-	margin-bottom: 7px;
-	padding: 4px 10px;
+	font: bold 10px/16px Roboto,sans-serif;
+	left: 10px;
+	padding: 0 6px;
+	position: absolute;
 	text-transform: uppercase;
-	}
+	top: -10px;
+}
 h2.stand-title{
 	width:54% !important;
 }
 #home-feat-wrap span.feat-cat {
-	position: absolute;
-	top:20px;left: 0;
+	font: bold 13px/20px Roboto,sesans-rif;
+	left: 0;
 	margin-bottom: 8px;
+	position: absolute;
+	top: 20px;
 	}
 
 #home-feat-text h2,
@@ -2334,11 +2318,6 @@ h2.stand-title{
 	font-weight: 800;
 	line-height: 100%;
 	margin-bottom: 5px;
-	-webkit-text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-	   -moz-text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-	    -ms-text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-	     -o-text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-		text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 	text-transform: uppercase;
 	width: 100%;
 	}
@@ -4763,12 +4742,12 @@ ul.archive-list li:last-child {
 	}
 #home-featured-top ul.archive-col-list li .archive-list-out,
 #home-featured-top ul.archive-col-list li .archive-list-in {
-	min-height: 120px;
+	min-height: 98px;
 }
 ul.archive-col-list li .archive-list-out,
 ul.archive-col-list li .archive-list-in {
 	float: left;background: white;
-	margin-left: 0;min-height: 240px;
+	margin-left: 0;
 	}
 
 .archive-list-img {
@@ -4795,15 +4774,15 @@ ul.archive-col-list li:hover .archive-list-img img {
 	}
 
 .archive-list-text {
-	width: 100%;
+	width: 100%;   min-height: 110px;
 	}
 
 .archive-list-text h2 {
 	float: left;
 	font-size: 1.15rem;
-	font-weight: 400;
-	line-height: 130%;
-	width: 100%;
+	font-weight: 700;
+	line-height: 100%;
+	text-transform: uppercase;
 	}
 
 .archive-list-text p {
@@ -4816,7 +4795,11 @@ ul.archive-col-list li:hover .archive-list-img img {
 	width: 100%;
 	}
 .archive-list-text p.pubdate{
-	padding:5px;font-size: .8rem;
+	bottom: 5px;
+	color: #000;
+	font-size: 0.7rem;
+	padding: 0 10px;
+	position: absolute;
 }
 h2.title-featured-post span{
 	font-size: .8rem;font-weight: 700;
@@ -6355,16 +6338,24 @@ body.logged-in .utility-nav .for-guests {
 .infinite-post{
 
 }
+#archive-list-wrap .infinite-post h2{
+	padding: 15px 10px;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 120%;
+}
 .infinite-post h2{
 	padding:5px;
 }
 h2.title-featured-post{
+	padding: 10px;
 	width: 176px;
 }
 h2.stand-title span{
 	color: black;
 	background: white;
-	line-height: 50px;
+	line-height: 44px;
+	padding: 0 10px;
 }
 @media only screen and (max-width: 767px) {
 	.fly-but-wrap{display:block}
