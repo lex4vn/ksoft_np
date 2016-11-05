@@ -1508,7 +1508,9 @@ ul.archive-col-list li:last-child .box-infinite-post{
 }
 
 @media screen and (max-width: 899px) and (min-width: 768px) {
-
+	#body-main-wrap{
+		width: 97%;
+	}
 	nav.main-menu-wrap,
 	.fly-to-top,
 	#tab-col2,
