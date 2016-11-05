@@ -50,60 +50,58 @@
 						</div>
 					</div>
 				</div>
-			</div>    </li>
-
-		<li class="utility-nav__maps">
-			<a class="utility-nav__dropdown-title icon-compass ga-trigger" data-ga-category="Nav" data-ga-action="nearby_map_nav_icon" data-ga-label="map_nav_icon_click" href="/map">
-				<span class="utility-nav__item-title">Near Me</span>
-			</a>
-			<a class="ga-trigger" href="/map" title="description" data-ga-category="Nav" data-ga-action="nearby_map_nav_dropdown" data-ga-label="map_nav_dropdown_click">
-				<div class="utility-nav__dropdown">
-					Discover Bars &amp; Restaurants
-				</div>
-			</a>
-
-		</li>
-
-		<li class="utility-nav__saved-items has-dropdown">
-        <span href="#" class="utility-nav__dropdown-title icon-bookmark-1">
-            <span class="utility-nav__item-title">Saved</span>
-        </span>
-			<div class="utility-nav__dropdown">
-				<div class="for-guests">
-					<a href="/login?destination=/saved" class="ga-trigger" data-ga-category="Nav" data-ga-action="saved_items" data-ga-label="login" data-ga-value="2">Log in</a>
-					or
-					<a class="nav-vortex-signup-dropdown ga-trigger" href="https://signup.thrillist.com/" data-ga-category="Nav" data-ga-action="saved_items" data-ga-label="sign up" data-ga-value="2">Sign Up</a> to start saving places
-				</div>
-				<div class="for-members">
-					View your<br><a href="/saved" class="ga-trigger" data-ga-category="Nav" data-ga-action="saved_items" data-ga-label="view saved" data-ga-value="2">Saved places</a>
-				</div>
 			</div>
 		</li>
 
-		<li class="utility-nav__user-options js-utility-nav__user-options has-dropdown">
-        <span href="#" class="utility-nav__dropdown-title js-utility-nav__dropdown-title icon-user" id="header-user-avatar">
-            <span class="utility-nav__item-title for-guests">Login</span>
-            <span class="utility-nav__item-title for-members">Account</span>
-            <img class="utility-nav__facebook-image js-utility-nav__facebook-image">
-        </span>
-			<div class="utility-nav__dropdown">
-				<ul>
-					<li class="for-guests user-options-login">
-						<a href="<?php echo wp_login_url(); ?>" class="ga-trigger" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="login" data-ga-value="3">Log In</a>
-					</li>
-					<li class="for-guests user-options-signup dropdown-nav-signup">
-						<a class="nav-vortex-signup-dropdown ga-trigger" href="#" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="signup" data-ga-value="3">Sign Up</a>
-					</li>
-
-					<li>
-						<a class="for-members ga-trigger" href="<?php echo admin_url( 'profile.php' ); ?>" alt="My Settings" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="account_settings" data-ga-value="3">Settings</a>
-					</li>
-					<li>
-						<a class="for-members user-details-logout ga-trigger js-logout-btn" href="<?php echo wp_logout_url(); ?>" data-ga-category="Nav" data-ga-action="user_options" data-ga-label="logout" data-ga-value="3">Log Out</a>
-					</li>
-				</ul>
-			</div>
-		</li>
+		<?php if(get_option('mvp_facebook')) { ?>
+			<li class="foot-soc-fb">
+				<a href="<?php echo esc_url(get_option('mvp_facebook')); ?>" target="_blank"><i class="fa fa-facebook-square fa-2"></i></a>
+			</li>
+		<?php } ?>
+		<?php if(get_option('mvp_twitter')) { ?>
+			<li class="foot-soc-twit">
+				<a href="<?php echo esc_url(get_option('mvp_twitter')); ?>" target="_blank"><i class="fa fa-twitter-square fa-2"></i></a>
+			</li>
+		<?php } ?>
+		<?php if(get_option('mvp_pinterest')) { ?>
+			<li class="foot-soc-pin">
+				<a href="<?php echo esc_url(get_option('mvp_pinterest')); ?>" target="_blank"><i class="fa fa-pinterest-square fa-2"></i></a>
+			</li>
+		<?php } ?>
+		<?php if(get_option('mvp_instagram')) { ?>
+			<li class="foot-soc-inst">
+				<a href="<?php echo esc_url(get_option('mvp_instagram')); ?>" target="_blank"><i class="fa fa-instagram fa-2"></i></a>
+			</li>
+		<?php } ?>
+		<?php if(get_option('mvp_google')) { ?>
+			<li class="foot-soc-goog">
+				<a href="<?php echo esc_url(get_option('mvp_google')); ?>" target="_blank"><i class="fa fa-google-plus-square fa-2"></i></a>
+			</li>
+		<?php } ?>
+		<?php if(get_option('mvp_youtube')) { ?>
+			<li class="foot-soc-yt">
+				<a href="<?php echo esc_url(get_option('mvp_youtube')); ?>" target="_blank"><i class="fa fa-youtube-play fa-2"></i></a>
+			</li>
+		<?php } ?>
+		<?php if(get_option('mvp_linkedin')) { ?>
+			<li class="foot-soc-link">
+				<a href="<?php echo esc_url(get_option('mvp_linkedin')); ?>" target="_blank"><i class="fa fa-linkedin-square fa-2"></i></a>
+			</li>
+		<?php } ?>
+		<?php if(get_option('mvp_tumblr')) { ?>
+			<li class="foot-soc-tumb">
+				<a href="<?php echo esc_url(get_option('mvp_tumblr')); ?>" target="_blank"><i class="fa fa-tumblr-square fa-2"></i></a>
+			</li>
+		<?php } ?>
+		<?php if(get_option('mvp_rss')) { ?>
+			<li class="foot-soc-rss">
+				<a href="<?php echo esc_url(get_option('mvp_rss')); ?>" target="_blank"><i class="fa fa-rss-square fa-2"></i></a>
+			</li>
+		<?php } else { ?>
+			<li class="foot-soc-rss">
+				<a href="<?php bloginfo('rss_url'); ?>" target="_blank"><i class="fa fa-rss-square fa-2"></i></a>
+			</li>
+		<?php } ?>
 
 	</ul>
 

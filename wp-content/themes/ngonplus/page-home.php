@@ -264,6 +264,7 @@
 						<div id="tab-col1" class="home-left-col relative tab-col-cont">
 							<?php $mvp_feat_posts = get_option('mvp_feat_posts'); $mvp_feat_layout = get_option('mvp_feat_layout'); if( $mvp_feat_layout !== "Featured 1" || $mvp_feat_posts !== "true") { ?>
 								<div class="side-title-wrap left relative">
+
 									<h3 class="side-list-title"><?php echo esc_html(get_option('mvp_feat_head')); ?></h3>
 								</div><!--side-title-wrap-->
 							<?php } ?>
@@ -447,7 +448,7 @@
 	$categories = get_categories( array('orderby' => 'name') );
 	foreach($categories as $sub_category){
 ?>
-	<div class="category-main-wrap home-main-wrap relative">
+	<div class="category-main-wrap home-main-wrap relative category-<?php echo esc_html( $sub_category->slug ); ?>">
 	<div class="home-wrap-out1">
 		<div class="home-wrap-in1">
 			<div id="home-left-wrap" class="left relative">
@@ -464,7 +465,17 @@
 								while($cat_posts->have_posts()) : $cat_posts->the_post();
 									$do_not_duplicate[] = $post->ID;
 									if (isset($do_not_duplicate)) { ?>
+										<?php $category = get_the_category(); ?>
 									<div class="home-feat-main left relative">
+
+										<div class="hp-stack-item--large__title-container stack-modifier--desktop">
+											<div class="vertical-circle-icon icon-section_<?php echo esc_html( $category[0]->slug ); ?>"></div>
+
+											<a class="hp-module-title stack-title__font category-<?php echo esc_html( $category[0]->slug ); ?>" href="/<?php echo esc_html( $category[0]->slug ); ?>">
+												Mới nhất trong <?php echo esc_html( $category[0]->cat_name ); ?>                         </a>
+
+										</div>
+
 										<a href="<?php the_permalink(); ?>" rel="bookmark">
 											<div class="home-feat-img left relative">
 												<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>

@@ -1,4 +1,5 @@
 <div class="side-title-wrap left relative">
+	<div class="section-icon icon-lightning-bolt"></div>
 	<h3 class="side-list-title"><?php echo esc_html(get_option('mvp_latest_head')); ?></h3>
 </div><!--side-title-wrap-->
 <div class="side-list-wrap left relative">

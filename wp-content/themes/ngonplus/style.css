@@ -364,7 +364,7 @@ a:focus {
 	content: '\e821'
 }
 
-.icon-section_food-and-drink:before {
+.icon-section_thuc-pham:before {
 	content: '\e823'
 }
 
@@ -372,7 +372,7 @@ a:focus {
 	content: '\e824'
 }
 
-.icon-section_health:before {
+.icon-section_suc-khoe:before {
 	content: '\e825'
 }
 
@@ -380,7 +380,7 @@ a:focus {
 	content: '\e827'
 }
 
-.icon-section_money:before {
+.icon-section_tai-chinh:before {
 	content: '\e828'
 }
 
@@ -392,15 +392,15 @@ a:focus {
 	content: '\e82b'
 }
 
-.icon-section_recipes:before {
+.icon-section_mon-ngon:before {
 	content: '\e82c'
 }
 
-.icon-section_tech:before {
+.icon-section_cong-nghe:before {
 	content: '\e82e'
 }
 
-.icon-section_travel:before {
+.icon-section_du-lich:before {
 	content: '\e82f'
 }
 
@@ -503,7 +503,22 @@ a:focus {
 .icon-clock:before {
 	content: '🕔'
 }
-
+.category-suc-khoe .vertical-circle-icon {
+	background-color: #4cab5c;
+}
+.category-cong-nghe #home-feat-wrap span.feat-cat,
+.category-cong-nghe .vertical-circle-icon {
+	background-color: #4c8dab;
+}
+.category-du-lich .vertical-circle-icon {
+	background-color: #395eaa;
+}
+.category-on-tap .vertical-circle-icon {
+	background-color: #e59200;
+}
+.category-tai-chinh .vertical-circle-icon {
+	background-color: #045e00;
+}
 .page-mask {
 	position: fixed;
 	top: 0;
@@ -2244,14 +2259,13 @@ ul.feat-wide-sub-list li:hover .feat-wide-sub-text h2 {
 	}
 
 .home-feat-main {
-	overflow: hidden;
 	width: 100%;
 	}
 
 #home-feat-img, .home-feat-img {
 	background: #000;
 	line-height: 0;
-	width: 100%;
+	width: 100%;overflow: hidden;
 	max-height: 350px;
 	}
 
@@ -5922,12 +5936,14 @@ a.inf-more-but:hover {
 }
 
 .utility-nav > li {
-	float: left;
+	float: left;    margin: 0 10px;
 	height: 100%;
 	display: table;
 	position: relative
 }
-
+.utility-nav > li a {
+	font-size: 20px;
+}
 .utility-nav > li > * {
 	display: table-cell;
 	vertical-align: middle
@@ -6356,6 +6372,55 @@ h2.stand-title span{
 	background: white;
 	line-height: 44px;
 	padding: 0 10px;
+}
+.section-travel .vertical-circle-icon {
+	background-color: #395eaa;
+}
+.vertical-circle-icon {
+	background-color: #d30000;
+	border-radius: 50%;
+	color: white;
+	display: inline;
+	font-size: 19px;
+	left: -15px;
+	margin: 0 auto;
+	padding: 4px 6px;
+	position: relative;
+	top: 5px;
+	z-index: 2;
+}
+
+.hp-stack-item--large__title-container {
+	background: rgba(0, 0, 0, 0) linear-gradient(to top, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.4)) repeat scroll 0 0;
+	display: inline-block;
+	height: 70px;
+	padding: 10px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	left:0;
+}
+
+
+.hp-module-title {
+	color: #fff;
+	display: inline;
+	margin-left: -9px;
+	text-transform: uppercase;
+	vertical-align: sub;
+}
+.stack-title__font {
+	font-family: Roboto,Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+}
+.section-icon {
+	background-color: #d30000;
+	border-radius: 50%;
+	color: #fff;
+	display: inline;
+	font-size: 14px;
+	padding: 2px 7px;
 }
 @media only screen and (max-width: 767px) {
 	.fly-but-wrap{display:block}
