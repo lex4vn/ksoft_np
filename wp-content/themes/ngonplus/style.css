@@ -4794,7 +4794,8 @@ ul.archive-col-list li:hover .archive-list-img img {
 	}
 
 .archive-list-text {
-	width: 100%;   min-height: 110px;
+	width: 100%;
+	min-height: auto;
 	}
 
 .archive-list-text h2 {
