@@ -163,6 +163,12 @@ a:focus {
 .icon-lightning-bolt:before {
 	content: '\26a1'
 }
+.icon-section_video::before {
+	content: "▸";
+}
+.icon-section_giai-tri::before {
+	content: "🎫";
+}
 
 .icon-mail:before {
 	content: '\2709'

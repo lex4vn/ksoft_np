@@ -447,6 +447,9 @@
 <?php
 	$categories = get_categories( array('orderby' => 'name') );
 	foreach($categories as $sub_category){
+		if($sub_category->slug == 'all'){
+			continue;
+		}
 ?>
 	<div class="category-main-wrap home-main-wrap relative category-<?php echo esc_html( $sub_category->slug ); ?>">
 	<div class="home-wrap-out1">
