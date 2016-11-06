@@ -4762,7 +4762,7 @@ ul.archive-list li:last-child {
 	}
 #home-featured-top ul.archive-col-list li .archive-list-out,
 #home-featured-top ul.archive-col-list li .archive-list-in {
-	min-height: 98px;
+	min-height: auto;
 }
 ul.archive-col-list li .archive-list-out,
 ul.archive-col-list li .archive-list-in {
@@ -5769,6 +5769,9 @@ a.inf-more-but:hover {
 .category-thuc-pham #head-main-wrap{
 	border-bottom-color: #a90000;
 }
+.vertical-circle-icon.icon-section_video{
+	padding: 4px 10px;
+}
 .thrillist-logo-wrap {
 	float: left; height: 100%;
 	display: table;
@@ -6376,7 +6379,7 @@ body.logged-in .utility-nav .for-guests {
 }
 h2.title-featured-post{
 	padding: 10px;
-	width: 176px;
+	width: auto;
 }
 h2.stand-title span{
 	color: black;
