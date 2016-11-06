@@ -1894,7 +1894,7 @@ ul.score-list li:hover {
 .leader-right-wrap {
 	line-height: 0;
 	text-align: center;
-	width: 100%;
+	width: 100%;margin: 20px 0;
 	}
 
 #leader-wrap {

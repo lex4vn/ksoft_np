@@ -13,6 +13,9 @@ ul.archive-col-list li:last-child .box-infinite-post{
 .category-main-wrap ul.archive-col-list {
 	margin-top: 15px !important;
 }
+.col-tabs-wrap{
+	display: none !important;
+}
 @media screen and (min-width: 1601px) {
 	#body-main-wrap {
 		width: 970px;
@@ -1603,7 +1606,7 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	}
 	#home-feat-text,
 	.category #home-feat-text {
-		padding: 50px 4.81927710843% 20px; /* 20px / 415px */
+		padding: 50px 5px 20px; /* 20px / 415px */
 		width: 90.3614457831%; /* 375px / 415px */
 		}
 		
@@ -1640,7 +1643,7 @@ ul.archive-col-list li:last-child .box-infinite-post{
 		
 	#feat-top-wrap #home-feat-text,
 	.feat-wide1-text {
-		padding: 50px 2.73597811218% 20px; /* 20px / 731px */
+		padding: 50px 0 20px; /* 20px / 731px */
 		width: 94.53%; /* 691px / 731px */
 		}
 		
