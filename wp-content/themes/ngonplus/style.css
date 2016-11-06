@@ -5678,6 +5678,7 @@ a.inf-more-but:hover {
 	display: none;
 	}
 
+.category-du-lich .current-menu-item a{color: #395eaa}
 .category-du-lich #head-main-wrap{
 	border-bottom-color: #395eaa
 }
@@ -5698,9 +5699,7 @@ a.inf-more-but:hover {
 	background-color: #395eaa;
 }
 
-
-
-
+.category-on-tap .current-menu-item a{color: #e59200}
 .category-on-tap #head-main-wrap{
 	border-bottom-color: #e59200
 }
@@ -5725,17 +5724,19 @@ a.inf-more-but:hover {
 }
 
 .category-on-tap #head-main-wrap{
-	border-bottom-color: #4C8DAB
+	border-bottom-color: #e59200;
 }
 
+.category-hen-ho .current-menu-item a{color: #8F4CAB}
 .category-hen-ho #head-main-wrap{
 	border-bottom-color: #8F4CAB
 }
 
+.category-giai-tri .current-menu-item a{color: #343434}
 .category-giai-tri #head-main-wrap{
 	border-bottom-color: #343434
 }
-
+.category-suc-khoe .current-menu-item a{color: #4CAB5C}
 .category-suc-khoe #head-main-wrap{
 	border-bottom-color: #4CAB5C
 }
@@ -5754,10 +5755,14 @@ a.inf-more-but:hover {
 	background-color: #3d894a;
 }
 
+.category-tai-chinh .current-menu-item a{color: #045e00}
 .category-tai-chinh #head-main-wrap{
 	border-bottom-color: #045e00
 }
-
+.category-thuc-pham .current-menu-item a{color: #a90000;}
+.category-thuc-pham #head-main-wrap{
+	border-bottom-color: #a90000;
+}
 .thrillist-logo-wrap {
 	float: left; height: 100%;
 	display: table;
