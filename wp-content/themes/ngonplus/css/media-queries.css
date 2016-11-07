@@ -17,9 +17,6 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	display: none !important;
 }
 @media screen and (min-width: 1601px) {
-	#body-main-wrap {
-		width: 970px;
-	}
 	.home-left-col,
 	.home-mid-col,
 	.home-right-col {
@@ -35,7 +32,7 @@ ul.archive-col-list li:last-child .box-infinite-post{
 			bottom: auto;
 			left: auto;
 			right: auto;
-		width: 1600px;
+		width: 970px;
 		}
 	#home-featured-top ul.archive-col-list li{
 		margin-left: 0; /* 20px / 698px */
