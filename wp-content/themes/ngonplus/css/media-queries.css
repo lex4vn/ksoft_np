@@ -50,6 +50,13 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	#home-featured-top	ul.archive-col-list {
 		margin-top: 10px;
 	}
+	#homepage-section{
+		display: none;
+	}
+    
+	#home-main-wrap{
+		display: block;
+	}
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1501px) {
@@ -1519,7 +1526,10 @@ ul.archive-col-list li:last-child .box-infinite-post{
 		width: auto;
 		padding: 20px;
 	}
-
+	#homepage-section{
+		display: block;
+	}
+    
 	#home-main-wrap, .foot-soc-rss{
 		display: none;
 	}

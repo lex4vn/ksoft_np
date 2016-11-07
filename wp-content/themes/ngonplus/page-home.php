@@ -441,6 +441,7 @@
 </div><!--home-main-wrap-->
 
 <!--Section and two new category-->
+<div id="homepage-section">
 <div id="wrap-section-menu">
 <nav class="section-menu-wrap left">
 	<div class="hp-title-container hp-title-container--sections">
@@ -453,8 +454,7 @@
 </nav>
 </div>
 <!--end section-->
-<div id="wrap-section-post">
-	<div id="section-post">
+
 <?php
 $categories = get_categories( array('orderby' => 'name') );
 $index = 0;
@@ -469,9 +469,17 @@ foreach($categories as $sub_category){
 			<?php if ($cat_posts->have_posts()) : while ($cat_posts->have_posts()) : $cat_posts->the_post();
 				if (in_array($post->ID, $do_not_duplicate))
 					continue;
-
+				if($index>=5){
+					break;
+				}
 			    if($index < 2){
 			?>
+								<?php if($index==0){ ?>
+								<div id="wrap-section-post">
+						<div id="section-post">
+					<?php }?>
+
+		
 					<div class="box-section-post">
 						<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
@@ -515,9 +523,16 @@ foreach($categories as $sub_category){
 							</a>
 						<?php } ?>
 					</div>
+					<?php if($index==1){ ?>
+					</div></div>
+					<!--End wrap section post-->
+					<?php }?>
 				<?php	} else{?>
 <!--	Three post				-->
-					-<div class="box-section-post">
+					<?php if($index==2){ ?>
+					<div class="box-3-section-post">
+					<?php }?>
+					<div class="box-1-section-post">
 						<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
 								<div class="section-post-out">
@@ -561,7 +576,9 @@ foreach($categories as $sub_category){
 						<?php } ?>
 					</div>
 
-
+					<?php if($index==4){ ?>
+					</div>
+					<?php }?>
 				<?php } ?>
 
 			<?php $index++;
@@ -569,8 +586,10 @@ foreach($categories as $sub_category){
 		<?php } ?>
 
 <?php  } ?> <!--End For -->
-</div></div>
-	<!--End wrap section post-->
+
+</div>
+<!-- END homepage section -->
+
 
 <?php if(get_option('mvp_middle_leader')) { ?>
 	<div id="leader-wrap" class="left relative">

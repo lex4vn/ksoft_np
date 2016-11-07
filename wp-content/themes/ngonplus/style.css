@@ -1387,6 +1387,16 @@ nav.main-menu-wrap ul li ul.sub-menu li a::before {
 .section-post{
 	float:left;
 }
+.box-3-section-post{
+	width: 100%;clear: both;
+}
+.box-1-section-post{
+	width: 33.3333%;
+	float: left;
+}
+.box-1-section-post .section-post-in{
+	margin-right: 20px;
+}
 #wrap-section-menu{
 	width: 30%;float:left;
 }

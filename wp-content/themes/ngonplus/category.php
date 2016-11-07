@@ -99,14 +99,17 @@
 		<div id="feat-top-wrap" class="left relative">
 			<div id="home-feat-wrap" class="left relative">
 
-                <div class="hp-stack-item--large__title-container landing-section__title-container section-travel">
-                    <div class="vertical-circle-icon icon-lightning-bolt"></div>
 
-                    <span class="hp-module-title stack-title stack-title__font">
-                        Latest  in Travel            </span>
-                </div>
 
 				<?php global $do_not_duplicate; global $post; $current_category = single_cat_title("", false); $category_id = get_cat_ID($current_category); $cat_posts = new WP_Query(array( 'cat' => $category_id, 'posts_per_page' => '1'  )); while($cat_posts->have_posts()) : $cat_posts->the_post(); $do_not_duplicate[] = $post->ID; if (isset($do_not_duplicate)) { ?>
+					 <?php $category = get_the_category();  ?>
+					 <div class="hp-stack-item--large__title-container landing-section__title-container">
+                    <div class="vertical-circle-icon icon-section_<?php echo esc_html( $category[0]->slug );   ?> "></div>
+
+                    <span class="hp-module-title stack-title stack-title__font">
+                        Nổi bật trong <?php echo esc_html( $category[0]->cat_name );   ?>        </span>
+                	</div>
+					
 					<div class="home-feat-main left relative">
 						<a href="<?php the_permalink(); ?>" rel="bookmark">
 						<div id="home-feat-img" class="left relative">
@@ -116,7 +119,7 @@
 							<?php } ?>
 						</div><!--home-feat-img-->
 						<div id="home-feat-text">
-							<span class="feat-cat"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></span>
+							<span class="feat-cat"><?php echo esc_html( $category[0]->cat_name ); ?></span>
 							<?php if(get_post_meta($post->ID, "mvp_featured_headline", true)): ?>
 								<h2><?php echo esc_html(get_post_meta($post->ID, "mvp_featured_headline", true)); ?></h2>
 								<p><?php the_title(); ?></p>
