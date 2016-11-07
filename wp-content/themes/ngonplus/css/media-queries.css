@@ -243,6 +243,9 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	nav.section-menu-wrap ul li{
 		width: 41.5%;
 	}
+	.hp-sections-list__button{
+		width: 86%;
+	}
 	.row-widget-wrap .feat-info-wrap,
 	span.social-text {
 		display: none;
