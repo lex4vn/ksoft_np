@@ -439,6 +439,20 @@
 
 	</div><!--home-wrap-out1-->
 </div><!--home-main-wrap-->
+
+<!--Section and two new category-->
+<nav class="section-menu-wrap left">
+	<div class="hp-title-container hp-title-container--sections">
+		<div class="section-icon"><span class="icon-burger"></span></div>
+		<div class="hp-sections-title section__font">Sections</div>
+	</div>
+	<?php wp_nav_menu(array('theme_location' => 'section-menu')); ?>
+	<button class="hp-sections-list__button section_open">All Sections</button>
+	<button class="hp-sections-list__button section_close">Close</button>
+</nav>
+<!--end section-->
+
+
 <?php if(get_option('mvp_middle_leader')) { ?>
 	<div id="leader-wrap" class="left relative">
 		<?php $ad970 = get_option('mvp_middle_leader'); if ($ad970) { echo html_entity_decode($ad970); } ?>

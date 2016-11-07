@@ -32,6 +32,18 @@ jQuery(document).ready(function($) {
 		});
 	});
 
+	$('#menu-section li:gt(1)').hide();
+	$('.section_open').click(function () {
+		$('#menu-section li:gt(1)').show();
+		$('.section_close').show();
+		$('.section_open').hide();
+
+	});
+	$('.section_close').click(function () {
+		$('#menu-section li:gt(1)').hide();
+		$('.section_open').show();
+		$('.section_close').hide();
+	});
 	// Scroll header
 	var lastScrollTop = 0;
 	var delta = 5;

@@ -409,6 +409,7 @@ function register_menus() {
 		array(
 			'main-menu' => __( 'Main Menu', 'mvp-text' ),
 			'mobile-menu' => __( 'Fly-Out Menu', 'mvp-text' ),
+			'section-menu' => __( 'Section Menu', 'mvp-text' ),
 			'footer-menu' => __( 'Footer Menu', 'mvp-text' ))
 	  	);
 	  }

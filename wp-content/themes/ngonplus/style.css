@@ -357,8 +357,34 @@ a:focus {
 .icon-food-2:before {
 	content: '\e81b'
 }
+.icon-burger {
+	display: inline-block;
+	position: relative;
+	width: 10px;
+	height: 2px;
+	background: #fff;
+	vertical-align: middle;
+	transition: all 0.4s cubic-bezier(0.5, 0.2, 0, 1);
+}
+.icon-burger:before {
+	-ms-transform: translateY(-4px);
+	transform: translateY(-4px);
+}
+.icon-burger:after {
+	-ms-transform: translateY(4px);
+	transform: translateY(4px);
+}
+.icon-burger:before, .icon-burger:after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	left: 0;
+	background: #fff;
+	transition: all 0.4s cubic-bezier(0.5, 0.2, 0, 1);
+}
 
-.icon-section_cars:before {
+.icon-section_xe-hoi:before {
 	content: '\e81f'
 }
 
@@ -509,19 +535,25 @@ a:focus {
 .icon-clock:before {
 	content: '🕔'
 }
+.category-suc-khoe .infinite-post .archive-list-text span,
 .category-suc-khoe .vertical-circle-icon {
 	background-color: #4cab5c;
 }
+.category-cong-nghe .infinite-post .archive-list-text span,
 .category-cong-nghe #home-feat-wrap span.feat-cat,
 .category-cong-nghe .vertical-circle-icon {
 	background-color: #4c8dab;
 }
+.category-du-lich .infinite-post .archive-list-text span,
 .category-du-lich .vertical-circle-icon {
 	background-color: #395eaa;
 }
+.category-on-tap .infinite-post .archive-list-text span,
 .category-on-tap .vertical-circle-icon {
 	background-color: #e59200;
 }
+
+.category-tai-chinh .infinite-post .archive-list-text span,
 .category-tai-chinh .vertical-circle-icon {
 	background-color: #045e00;
 }
@@ -1317,7 +1349,7 @@ nav.main-menu-wrap ul li ul.sub-menu li {
 	text-align: center;
 	width: 182px; margin: 10px 5px 5px 10px;
 	background-image: url("./images/all_sections.jpg");
-	}
+}
 nav.main-menu-wrap ul li ul.sub-menu li a::before {
 	content: "";
 	position: absolute;
@@ -1330,7 +1362,65 @@ nav.main-menu-wrap ul li ul.sub-menu li a::before {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+.hp-sections-title {
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+.section-menu-wrap{
+	background: white;
+}
+.section-menu-wrap .hp-title-container {
+	padding-bottom: 9px;
+	margin-top: -10px;
+	text-align: center;
+	display: block;
+}
+#menu-section{
+	padding: 10px 3px 0 10px;
+}
+.hp-sections-list__button {
+	display: inline-block;
+	width: 89%;
+	padding: 10px 0;
+	margin: 5px 0px 15px 20px;
+	text-align: center;
+	color: #fff;
+	background-color: #c8c8c8;
+	cursor: pointer;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+}
+.section_close{
+	display: none;
+}
+#menu-section li a {
+	line-height: 90px;
+	color: white;
+}
+nav.section-menu-wrap ul li {
+	color: #fff;
+	display: table;
+	height: 90px;
+	position: relative;
+	text-align: center;
+	width: 43%;
+	margin: 10px;float:left;
+	background-image: url("./images/all_sections.jpg");
+}
+nav.section-menu-wrap ul li a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 
+	transition: transform 0.8s cubic-bezier(0.5, 0.2, 0, 1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
 .subnav__item--food-and-drink {
 	background-position: 0 0
 }
@@ -2298,7 +2388,7 @@ ul.feat-wide-sub-list li:hover .feat-wide-sub-text h2 {
 	}
 
 #feat-top-wrap #home-feat-text {
-	padding: 50px 2.16919739696% 30px; /* 30px / 1383px */
+	padding: 50px 5px 30px; /* 30px / 1383px */
 	width: 95.7%; /* 1323px / 1383px */
 	}
 
