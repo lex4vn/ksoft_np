@@ -473,7 +473,7 @@ foreach($categories as $sub_category){
 			    if($index > 1){
 					continue;
 				}
-			$index++;
+
 			?>
 					<div class="box-section-post">
 						<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
@@ -518,7 +518,8 @@ foreach($categories as $sub_category){
 							</a>
 						<?php } ?>
 					</div>
-			<?php endwhile; endif; ?>
+			<?php $index++;
+				endwhile; endif; ?>
 		<?php } ?>
 
 <?php  } ?> <!--End For -->
