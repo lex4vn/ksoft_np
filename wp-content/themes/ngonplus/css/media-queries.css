@@ -240,6 +240,9 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	#body-main-wrap {
 		width: 970px;
 	}
+	nav.section-menu-wrap ul li{
+		width: 41.5%;
+	}
 	.row-widget-wrap .feat-info-wrap,
 	span.social-text {
 		display: none;
