@@ -1194,6 +1194,7 @@ nav.fly-nav-menu ul li ul.sub-menu {
 	bottom: -27px;
 	left: 0;
 }
+.section-post-img,
 .section-post-img img{width: 100%;}
 .section-post-text.left.relative > h2 {
 	padding: 15px 10px;
@@ -1375,7 +1376,7 @@ nav.main-menu-wrap ul li ul.sub-menu li a::before {
 }
 .section-menu-wrap{
 	background: white;
-	width: 308px;
+	width: 100%;
 }
 .section-post{
 	float:left;
@@ -1387,7 +1388,7 @@ nav.main-menu-wrap ul li ul.sub-menu li a::before {
 	width: 70%;float:left;
 }
 #section-post{
-	margin-left: 40px;
+	margin-left: 20px;
 }
 .section-menu-wrap .hp-title-container {
 	padding-bottom: 9px;

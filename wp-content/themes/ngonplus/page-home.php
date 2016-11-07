@@ -466,7 +466,14 @@ foreach($categories as $sub_category){
 	?>
 		<?php global $do_not_duplicate; if (isset($do_not_duplicate)) { ?>
 			<?php $category_id = get_cat_ID($sub_category->term_id); $cat_posts = new WP_Query(array( 'cat' => $sub_category->term_id, 'posts_per_page' => '1'  )); ?>
-			<?php if ($cat_posts->have_posts()) : while ($cat_posts->have_posts()) : $cat_posts->the_post(); if (in_array($post->ID, $do_not_duplicate)) continue; ?>
+			<?php if ($cat_posts->have_posts()) : while ($cat_posts->have_posts()) : $cat_posts->the_post();
+				if (in_array($post->ID, $do_not_duplicate))
+					continue;
+
+			    if($index > 1){
+					continue;
+				}
+			?>
 					<div class="box-section-post">
 						<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">

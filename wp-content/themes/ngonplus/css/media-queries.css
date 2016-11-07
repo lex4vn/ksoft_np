@@ -1515,6 +1515,12 @@ ul.archive-col-list li:last-child .box-infinite-post{
 		width: auto;
 		padding: 20px;
 	}
+	nav.section-menu-wrap ul li{
+		width: 39%;
+	}
+	#menu-section li a {
+		font-size: 80%;
+	}
 	nav.main-menu-wrap,
 	.fly-to-top,
 	#tab-col2,
