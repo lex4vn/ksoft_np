@@ -1522,6 +1522,7 @@ ul.archive-col-list li:last-child .box-infinite-post{
 		width: auto;
 		padding: 20px;
 	}
+
 	#home-main-wrap, .foot-soc-rss{
 		display: none;
 	}
@@ -1534,8 +1535,7 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	#menu-section li a {
 		font-size: 80%;
 	}
-	nav.main-menu-wrap,
-	.fly-to-top,
+	.fly-to-top,.main-menu-wrap ul.menu li.behide,
 	#tab-col2,
 	.feat-title-wrap,
 	#tab-col2 .side-title-wrap,
