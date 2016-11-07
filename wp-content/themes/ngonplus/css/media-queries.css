@@ -2095,7 +2095,7 @@ ul.archive-col-list li:last-child .box-infinite-post{
 		}
 		
 	.nav-logo-in {
-		margin-left: 280px !important;
+
 		}
 		
 	.nav-left-wrap {
@@ -4027,10 +4027,13 @@ ul.archive-col-list li:last-child .box-infinite-post{
 		}
 
 }
-
+/*IPHONE*/
 @media screen and (max-width: 479px) {
 	#body-main-cont, #home-left-wrap, .home-wrap-out1, #home-main-wrap {
 		width: 100% !important;
+	}
+	#wrap-section-menu,#wrap-section-post{
+		width: 100%;
 	}
 	#score-wrap,
 	nav.main-menu-wrap,
