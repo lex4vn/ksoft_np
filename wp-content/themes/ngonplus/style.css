@@ -535,25 +535,25 @@ a:focus {
 .icon-clock:before {
 	content: '🕔'
 }
-.category-suc-khoe .infinite-post .archive-list-text span,
+.category-suc-khoe .infinite-post .archive-list-text > span,
 .category-suc-khoe .vertical-circle-icon {
 	background-color: #4cab5c;
 }
-.category-cong-nghe .infinite-post .archive-list-text span,
+.category-cong-nghe .infinite-post .archive-list-text > span,
 .category-cong-nghe #home-feat-wrap span.feat-cat,
 .category-cong-nghe .vertical-circle-icon {
 	background-color: #4c8dab;
 }
-.category-du-lich .infinite-post .archive-list-text span,
+.category-du-lich .infinite-post .archive-list-text > span,
 .category-du-lich .vertical-circle-icon {
 	background-color: #395eaa;
 }
-.category-on-tap .infinite-post .archive-list-text span,
+.category-on-tap .infinite-post .archive-list-text > span,
 .category-on-tap .vertical-circle-icon {
 	background-color: #e59200;
 }
 
-.category-tai-chinh .infinite-post .archive-list-text span,
+.category-tai-chinh .infinite-post .archive-list-text > span,
 .category-tai-chinh .vertical-circle-icon {
 	background-color: #045e00;
 }
@@ -1194,6 +1194,13 @@ nav.fly-nav-menu ul li ul.sub-menu {
 	bottom: -27px;
 	left: 0;
 }
+.section-post-img img{width: 100%;}
+.section-post-text.left.relative > h2 {
+	padding: 15px 10px;
+}
+.section-post-text{
+	width: 100%;background: white;
+}
 #home-featured-top{
 	margin-top: 15px;
 }
@@ -1368,6 +1375,19 @@ nav.main-menu-wrap ul li ul.sub-menu li a::before {
 }
 .section-menu-wrap{
 	background: white;
+	width: 308px;
+}
+.section-post{
+	float:left;
+}
+#wrap-section-menu{
+	width: 30%;float:left;
+}
+#wrap-section-post{
+	width: 70%;float:left;
+}
+#section-post{
+	margin-left: 40px;
 }
 .section-menu-wrap .hp-title-container {
 	padding-bottom: 9px;
@@ -4885,7 +4905,7 @@ ul.archive-col-list li:hover .archive-list-img img {
 
 .archive-list-text {
 	width: 100%;
-	min-height: auto;
+	min-height: 100px;
 	}
 
 .archive-list-text h2 {
@@ -4905,6 +4925,7 @@ ul.archive-col-list li:hover .archive-list-img img {
 	margin-top: 5px;
 	width: 100%;
 	}
+.section-post-text p.pubdate,
 .archive-list-text p.pubdate{
 	bottom: 5px;
 	color: #000;

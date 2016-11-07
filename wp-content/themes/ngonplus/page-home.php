@@ -441,6 +441,7 @@
 </div><!--home-main-wrap-->
 
 <!--Section and two new category-->
+<div id="wrap-section-menu">
 <nav class="section-menu-wrap left">
 	<div class="hp-title-container hp-title-container--sections">
 		<div class="section-icon"><span class="icon-burger"></span></div>
@@ -450,8 +451,71 @@
 	<button class="hp-sections-list__button section_open">All Sections</button>
 	<button class="hp-sections-list__button section_close">Close</button>
 </nav>
+</div>
 <!--end section-->
+<div id="wrap-section-post">
+	<div id="section-post">
+<?php
+$categories = get_categories( array('orderby' => 'name') );
+$index = 0;
+$sectionPost = [];
+foreach($categories as $sub_category){
+	if($sub_category->slug == 'all'){
+		continue;
+	}
+	?>
+		<?php global $do_not_duplicate; if (isset($do_not_duplicate)) { ?>
+			<?php $category_id = get_cat_ID($sub_category->term_id); $cat_posts = new WP_Query(array( 'cat' => $sub_category->term_id, 'posts_per_page' => '1'  )); ?>
+			<?php if ($cat_posts->have_posts()) : while ($cat_posts->have_posts()) : $cat_posts->the_post(); if (in_array($post->ID, $do_not_duplicate)) continue; ?>
+					<div class="box-section-post">
+						<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
+							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+								<div class="section-post-out">
+									<div class="section-post-img left relative">
+										<?php the_post_thumbnail('mvp-medium-thumb', array( 'class' => 'reg-img' )); ?>
+										<?php the_post_thumbnail('mvp-small-thumb', array( 'class' => 'mob-img' )); ?>
+										<?php $post_views = get_post_meta($post->ID, "post_views_count", true); if ( $post_views >= 1) { ?>
+											<div class="feat-info-wrap">
+												<div class="feat-info-views">
+													<i class="fa fa-eye fa-2"></i> <span class="feat-info-text"><?php mvp_post_views(); ?></span>
+												</div><!--feat-info-views-->
+												<?php $disqus_id = get_option('mvp_disqus_id'); if ( ! $disqus_id ) { if (get_comments_number()==0) { } else { ?>
+													<div class="feat-info-comm">
+														<i class="fa fa-comment"></i> <span class="feat-info-text"><?php comments_number( '0', '1', '%' ); ?></span>
+													</div><!--feat-info-comm-->
+												<?php } } ?>
+											</div><!--feat-info-wrap-->
+										<?php } ?>
+										<?php if ( has_post_format( 'video' )) { ?>
+											<div class="feat-vid-but">
+												<i class="fa fa-play fa-3"></i>
+											</div><!--feat-vid-but-->
+										<?php } ?>
+									</div><!--archive-list-img-->
+									<div class="section-post-in">
+										<div class="section-post-text left relative">
+											<span class="feat-cat"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></span>
+											<h2><span><?php the_title(); ?></span></h2>
+											<p class="pubdate"><?php echo get_the_date(); ?></p>
 
+										</div><!--archive-list-text-->
+									</div><!--archive-list-in-->
+								</div><!--archive-list-out-->
+							</a>
+						<?php } else { ?>
+							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+								<div class="section-post-text left relative">
+									<h2><?php the_title(); ?></h2>
+								</div><!--archive-list-text-->
+							</a>
+						<?php } ?>
+					</div>
+			<?php endwhile; endif; ?>
+		<?php } ?>
+
+<?php  } ?> <!--End For -->
+</div></div>
+	<!--End wrap section post-->
 
 <?php if(get_option('mvp_middle_leader')) { ?>
 	<div id="leader-wrap" class="left relative">
