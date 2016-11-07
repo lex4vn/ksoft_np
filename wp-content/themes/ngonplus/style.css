@@ -1499,6 +1499,9 @@ nav.section-menu-wrap ul li a::before {
 .subnav__item--grillist{
 	background-position: -1092px 0px
 }
+.fly-nav-menu .menu-all .sub-menu li a {
+	line-height: 18px;
+}
 .menu-all .sub-menu li a {
 	line-height: 53px;
 }
