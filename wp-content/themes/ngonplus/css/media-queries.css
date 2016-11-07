@@ -235,7 +235,7 @@ ul.archive-col-list li:last-child .box-infinite-post{
 		}
 
 }
-
+/*Laptop*/
 @media screen and (max-width: 1399px) and (min-width: 1250px) {
 	#body-main-wrap {
 		width: 970px;
@@ -1057,9 +1057,8 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	nav.section-menu-wrap ul li{
 		width: 41.5%;
 	}
-	.fly-to-top,
+	.fly-to-top,.main-menu-wrap ul.menu li.behide,
 	#tab-col2,
-	nav.main-menu-wrap,
 	.feat-title-wrap,
 	#tab-col2 .side-title-wrap,
 	ul.col-tabs li.pop-col-tab,
@@ -1499,9 +1498,9 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	.nav-logo-out {
 		margin-left: -280px !important;
 		}
-		
+
 	.nav-logo-in {
-		margin-left: 280px !important;
+
 		}
 		
 	.nav-left-wrap {
@@ -1523,7 +1522,7 @@ ul.archive-col-list li:last-child .box-infinite-post{
 		width: auto;
 		padding: 20px;
 	}
-	#home-main-wrap{
+	#home-main-wrap, .foot-soc-rss{
 		display: none;
 	}
 	nav.section-menu-wrap ul li{
@@ -1808,7 +1807,10 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	#post-right-col .blog-widget-text h2 {
 		font-size: 1rem;
 		}
-		
+	.category-main-wrap ul.archive-col-list {
+		margin-top: 0 !important;
+	}
+
 	#archive-list-wrap {
 		padding: 20px 0 0px;
 		width: 100%;

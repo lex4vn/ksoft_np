@@ -501,7 +501,7 @@ foreach($categories as $sub_category){
 										<?php } ?>
 									</div><!--archive-list-img-->
 									<div class="section-post-in">
-										<div class="section-post-text left relative">
+										<div class="section-post-text <?php echo $index == 0? 'post-first':'' ?> left relative">
 											<span class="feat-cat"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></span>
 											<h2><span><?php the_title(); ?></span></h2>
 											<p class="pubdate"><?php echo get_the_date(); ?></p>
