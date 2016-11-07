@@ -1048,7 +1048,9 @@ ul.archive-col-list li:last-child .box-infinite-post{
 }
 
 @media screen and (max-width: 1003px) and (min-width: 900px) {
-
+	nav.section-menu-wrap ul li{
+		width: 41.5%;
+	}
 	.fly-to-top,
 	#tab-col2,
 	nav.main-menu-wrap,
@@ -1509,11 +1511,14 @@ ul.archive-col-list li:last-child .box-infinite-post{
 		}
 		
 }
-
+/*IPAD*/
 @media screen and (max-width: 899px) and (min-width: 768px) {
 	#body-main-wrap{
 		width: auto;
 		padding: 20px;
+	}
+	#home-main-wrap{
+		display: none;
 	}
 	nav.section-menu-wrap ul li{
 		width: 39%;
