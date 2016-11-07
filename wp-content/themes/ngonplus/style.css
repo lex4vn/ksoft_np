@@ -1194,13 +1194,16 @@ nav.fly-nav-menu ul li ul.sub-menu {
 	bottom: -27px;
 	left: 0;
 }
+..section-post-text:first-child{
+	margin-bottom: 20px;
+}
 .section-post-img,
 .section-post-img img{width: 100%;}
 .section-post-text.left.relative > h2 {
 	padding: 15px 10px;
 }
 .section-post-text{
-	width: 100%;background: white;
+	width: 100%;background: white;    height: 64px;
 }
 #home-featured-top{
 	margin-top: 15px;

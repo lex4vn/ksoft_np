@@ -1518,6 +1518,9 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	nav.section-menu-wrap ul li{
 		width: 39%;
 	}
+	.hp-sections-list__button{
+		width: 82%;
+	}
 	#menu-section li a {
 		font-size: 80%;
 	}

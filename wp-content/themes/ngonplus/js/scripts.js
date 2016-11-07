@@ -32,15 +32,15 @@ jQuery(document).ready(function($) {
 		});
 	});
 
-	$('#menu-section li:gt(10)').hide();
+	$('#menu-section li:gt(9)').hide();
 	$('.section_open').click(function () {
-		$('#menu-section li:gt(3)').show();
+		$('#menu-section li:gt(9)').show();
 		$('.section_close').show();
 		$('.section_open').hide();
 
 	});
 	$('.section_close').click(function () {
-		$('#menu-section li:gt(3)').hide();
+		$('#menu-section li:gt(9)').hide();
 		$('.section_open').show();
 		$('.section_close').hide();
 	});
