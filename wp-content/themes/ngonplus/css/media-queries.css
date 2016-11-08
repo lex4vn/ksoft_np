@@ -2698,6 +2698,12 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	#body-main-cont, #home-left-wrap, .home-wrap-out1, #home-main-wrap {
 		width: 100% !important;
 	}
+	#wrap-section-menu{
+		width: 40%;
+	}
+	#wrap-section-post{
+		width: 60%;
+	}
 	nav.main-menu-wrap,
 	.fly-to-top,
 	#tab-col2,
