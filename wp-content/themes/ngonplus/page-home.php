@@ -485,7 +485,7 @@ foreach($categories as $sub_category){
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
 								<div class="section-post-out">
 									<div class="section-post-img left relative">
-										<?php the_post_thumbnail('mvp-medium-thumb', array( 'class' => 'reg-img' )); ?>
+										<?php the_post_thumbnail('mvp-section-thumb', array( 'class' => 'reg-img' )); ?>
 										<?php the_post_thumbnail('mvp-small-thumb', array( 'class' => 'mob-img' )); ?>
 										<?php $post_views = get_post_meta($post->ID, "post_views_count", true); if ( $post_views >= 1) { ?>
 											<div class="feat-info-wrap">
