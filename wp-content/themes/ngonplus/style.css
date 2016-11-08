@@ -1203,6 +1203,9 @@ nav.fly-nav-menu ul li ul.sub-menu {
 .box-1-section-post .section-post-img{
 	margin-right: 20px;
 }
+.box-1-section-post .box-section-post-2{
+	padding:0 10
+}
 .section-post-img,
 .section-post-img img{width: 100%;}
 .section-post-text.left.relative > h2 {
@@ -1398,7 +1401,7 @@ nav.main-menu-wrap ul li ul.sub-menu li a::before {
 	float: left;
 }
 .box-1-section-post .section-post-in{
-	margin-right: 20px;
+
 }
 #wrap-section-menu{
 	width: 30%;float:left;
@@ -4928,7 +4931,7 @@ ul.archive-col-list li:hover .archive-list-img img {
 	}
 
 .archive-list-text {
-	width: 100%;
+	width: 100%;min-width: 144px;
 	min-height: 100px;
 	}
 

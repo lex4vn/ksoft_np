@@ -530,9 +530,10 @@ foreach($categories as $sub_category){
 				<?php	} else{?>
 <!--	Three post				-->
 					<?php if($index==2){ ?>
+					<div class="box-3-section-post"></div>
 					<div class="box-3-section-post">
 					<?php }?>
-					<div class="box-1-section-post">
+					<div class="box-1-section-post box-section-post-<?php echo $index; ?>">
 						<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
 								<div class="section-post-out">
