@@ -1410,7 +1410,7 @@ nav.main-menu-wrap ul li ul.sub-menu li a::before {
 
 }
 #wrap-section-menu{
-	width: 30%;float:left;
+	width: 30%;float:left;margin-bottom: 20px;
 }
 #wrap-section-post{
 	width: 70%;float:left;

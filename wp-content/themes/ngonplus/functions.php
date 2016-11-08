@@ -485,7 +485,7 @@ add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 1000, 600, true );
 add_image_size( 'mvp-post-thumb', 1000, 600, true );
 add_image_size( 'mvp-medium-thumb', 450, 270, true );
-add_image_size( 'mvp-section-thumb', 367, 220, true );
+add_image_size( 'mvp-section-thumb', 489, 254, true );
 add_image_size( 'mvp-mid-thumb', 300, 180, true );
 add_image_size( 'mvp-small-thumb', 80, 80, true );
 }
