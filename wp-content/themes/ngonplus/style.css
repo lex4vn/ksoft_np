@@ -1203,13 +1203,13 @@ nav.fly-nav-menu ul li ul.sub-menu {
 .box-1-section-post .section-post-img{
 	margin-right: 20px;
 }
-.box-1-section-post .box-section-post-2{
+.box-1-section-post .box-section-post-2 .section-post-out{
 	padding:0 15px 0 0;
 }
-.box-1-section-post .box-section-post-3{
+.box-1-section-post .box-section-post-3 .section-post-out{
 	padding:0 5px 0 10px;
 }
-.box-1-section-post .box-section-post-4{
+.box-1-section-post .box-section-post-4 .section-post-out{
 	padding:0 0 0 15px;
 }
 .section-post-img,
