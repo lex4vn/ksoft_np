@@ -1200,6 +1200,9 @@ nav.fly-nav-menu ul li ul.sub-menu {
 .section-post-text.post-first{
 	margin-bottom: 20px;
 }
+.box-1-section-post{
+	margin-right: 20px;
+}
 .section-post-img,
 .section-post-img img{width: 100%;}
 .section-post-text.left.relative > h2 {
