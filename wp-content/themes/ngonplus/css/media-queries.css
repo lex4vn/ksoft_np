@@ -1542,6 +1542,10 @@ ul.archive-col-list li:last-child .box-infinite-post{
 	#menu-section li a {
 		font-size: 80%;
 	}
+	.box-1-section-post .section-post-out .section-post-img {
+		height: 132px;
+		width: 100%;
+	}
 	.fly-to-top,.main-menu-wrap ul.menu li.behide,
 	#tab-col2,
 	.feat-title-wrap,

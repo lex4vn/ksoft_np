@@ -543,7 +543,7 @@ a:focus {
 .category-cong-nghe .infinite-post .archive-list-text > span,
 .category-cong-nghe #home-feat-wrap span.feat-cat,
 .category-cong-nghe .vertical-circle-icon {
-	background-color: #4c8dab;
+	background-color: #4C8DAB;
 }
 .category-du-lich .infinite-post .archive-list-text > span,
 .category-du-lich span.feat-cat,
@@ -1204,7 +1204,7 @@ nav.fly-nav-menu ul li ul.sub-menu {
 	margin-right: 20px;
 }
 .box-section-post-2 .section-post-out{
-	padding:0 15px 0 0;
+	padding:0 10px 0 0;
 }
 .box-section-post-3 .section-post-out{
 	padding:0 5px 0 10px;
@@ -1212,13 +1212,16 @@ nav.fly-nav-menu ul li ul.sub-menu {
 .box-section-post-4 .section-post-out{
 	padding:0 0 0 15px;
 }
-.section-post-img,
+.section-post-out .section-post-img{
+	height: 254px;width: 100%;
+}
+
 .section-post-img img{width: 100%;}
 .section-post-text.left.relative > h2 {
 	padding: 15px 10px;
 }
 .section-post-text{
-	width: 100%;background: white;    height: 64px;
+	width: 100%;background: white;    height: 64px;    padding-right: 1px;
 }
 #home-featured-top{
 	margin-top: 15px;
@@ -1394,7 +1397,7 @@ nav.main-menu-wrap ul li ul.sub-menu li a::before {
 }
 .section-menu-wrap{
 	background: white;
-	width: 100%;
+	margin-right: 10px;
 }
 .section-post{
 	float:left;
@@ -1410,13 +1413,13 @@ nav.main-menu-wrap ul li ul.sub-menu li a::before {
 
 }
 #wrap-section-menu{
-	width: 30%;float:left;margin-bottom: 20px;
+	width: 33.3333%;float:left;margin-bottom: 20px;
 }
 #wrap-section-post{
-	width: 70%;float:left;
+	width: 66.6666%;float:right;
 }
 #section-post{
-	margin-left: 20px;
+	margin-left: 10px;
 }
 .section-menu-wrap .hp-title-container {
 	padding-bottom: 9px;
@@ -1425,7 +1428,7 @@ nav.main-menu-wrap ul li ul.sub-menu li a::before {
 	display: block;
 }
 #menu-section{
-	padding: 10px 3px 0 10px;
+	padding: 10px 0px 0 10px;
 }
 .hp-sections-list__button {
 	display: inline-block;
@@ -4877,7 +4880,7 @@ ul.archive-list li {
 
 ul.archive-col-list li {
 	float: left;
-	margin: 0 0 20px 1.90839694656%; /* 20px / 1048px */
+	margin: 0 0 10px 1.90839694656%; /* 20px / 1048px */
 	overflow: hidden;
 	position: relative;
 	width: 31.4249363868%; /* 329.3333333px / 1048px */
@@ -4910,7 +4913,7 @@ ul.archive-list li:last-child {
 ul.archive-col-list li .archive-list-out,
 ul.archive-col-list li .archive-list-in {
 	float: left;background: white;
-	margin-left: 0;
+	margin-left: 0;    padding-right: 1px;
 	}
 
 .archive-list-img {
@@ -6062,7 +6065,7 @@ a.inf-more-but:hover {
 	float: none;
 }
 .home-wrap-out1 {
-	margin: 0 auto;
+	margin: 0 auto;margin-top: 10px;
 }
 
 .landing-section__title-container {
