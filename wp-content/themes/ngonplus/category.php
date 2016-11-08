@@ -107,7 +107,7 @@
                     <div class="vertical-circle-icon icon-section_<?php echo esc_html( $category[0]->slug );   ?> "></div>
 
                     <span class="hp-module-title stack-title stack-title__font">
-                        Nổi bật trong <?php echo esc_html( $category[0]->cat_name );   ?>        </span>
+                        Nổi bật trong <?php echo esc_html( $category[0]->cat_name );   ?></span>
                 	</div>
 					
 					<div class="home-feat-main left relative">

@@ -523,7 +523,7 @@ foreach($categories as $sub_category){
 							</a>
 						<?php } ?>
 					</div>
-					<?php if($index==1){ ?>
+					<?php if($index== 1){ ?>
 					</div></div>
 					<!--End wrap section post-->
 					<?php }?>
