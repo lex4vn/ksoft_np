@@ -1213,7 +1213,7 @@ nav.fly-nav-menu ul li ul.sub-menu {
 	padding:0 0 0 15px;
 }
 .section-post-out .section-post-img{
-	height: 254px;width: 100%;
+	height: 254px;width: 100%;overflow: hidden;
 }
 
 .section-post-img img{width: 100%;}
@@ -2263,7 +2263,6 @@ ul.feat-wide-sub-list li:hover .feat-wide-sub-text h2 {
 
 #feat-top-wrap {
 	margin-bottom: 15px;
-	overflow: hidden;
 	width: 100%;
 	}
 
