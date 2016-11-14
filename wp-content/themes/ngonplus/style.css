@@ -1212,6 +1212,9 @@ nav.fly-nav-menu ul li ul.sub-menu {
 .box-section-post-4 .section-post-out{
 	padding:0 0 0 15px;
 }
+.box-1-section-post .section-post-out .section-post-img{
+	height: 186px;
+}
 .section-post-out .section-post-img{
 	height: 254px;width: 100%;overflow: hidden;
 }
@@ -4836,7 +4839,11 @@ p.form-allowed-tags {
 /************************************************
 	Archives
 ************************************************/
-
+.archive-list-out,.section-post-out, #home-feat-wrap,.section-post-text, .section-post-img,.section-menu-wrap,
+#home-feat-img{
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+}
 h1.cat-head,
 h1.arch-head {
 	color: #222;
@@ -4912,7 +4919,8 @@ ul.archive-list li:last-child {
 ul.archive-col-list li .archive-list-out,
 ul.archive-col-list li .archive-list-in {
 	float: left;background: white;
-	margin-left: 0;    padding-right: 1px;
+	margin-left: 0;
+	padding-right: 0;
 	}
 
 .archive-list-img {
