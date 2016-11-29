@@ -6602,6 +6602,40 @@ h2.stand-title span{
 	}
 }
 @media (max-width: 767px) {
+	#home-mid-wrap, .home-wrap-out1 {
+		padding: 0 2%;
+		box-sizing: border-box;
+	}
+	#feat-top-wrap {
+		margin-bottom:0;
+	}
+	#home-featured-top {
+		float:left;
+		overflow-y:hidden;
+		overflow-x:scroll;
+		margin-top:0;
+	}
+	#home-featured-top ul.archive-col-list {
+		width:200%;
+		height:182px;
+
+	}
+	#home-featured-top ul.archive-col-list li {
+		background:#fff;
+		width:18% !important;
+
+		margin-left:2% !important;
+		height:178px !important;
+	}
+
+	#home-featured-top ul.archive-col-list li:nth-child(5) {
+
+
+
+	}
+
+
+
 	#fly-wrap {
 
 	}
