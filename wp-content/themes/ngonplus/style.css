@@ -6602,6 +6602,9 @@ h2.stand-title span{
 	}
 }
 @media (max-width: 767px) {
+	#fly-wrap {
+
+	}
 	#home-mid-wrap >div {
 		margin:0;
 		width:100%;
@@ -6899,4 +6902,23 @@ h2.stand-title span{
 }
 #home-mid-wrap >div:nth-child(2) ul.blog-widget-list li h2 {
 	font-weight:bold;
+}
+.fly-wrap-in {
+	background:#fff;
+}
+nav.fly-nav-menu ul li a {
+	color:#646464;
+	font-weight:bold;
+}
+nav.fly-nav-menu ul li {
+	border-top:1px solid #c8c8c8;
+}
+.fly-side-wrap {
+	background:#990000;
+}
+ul.fly-bottom-soc li a {
+	color:#fff;
+	border:none;
+	border-bottom:1px solid rgba(0,0,0,0.2);
+	background:#d30000;
 }
